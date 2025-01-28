@@ -13,6 +13,11 @@ const page = () => {
                     ]}
                 />
                 <ContactForm />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3662.359723397855!2d85.3140692!3d23.3752004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e11d83a19821%3A0x2d8e195c1e53d78d!2sAnish%20Enterprises!5e0!3m2!1sen!2sin!4v1738092839655!5m2!1sen!2sin"
+                    className='w-full aspect-video'
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"></iframe>
             </main>
         </div>
     )

@@ -1,6 +1,7 @@
 import { MapPin, Mail, Phone, ShieldCheck, ClipboardList, Facebook, Twitter, Linkedin } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
+import Link from "next/link"
 
 export const Footer = () => {
     return (
@@ -45,16 +46,16 @@ export const Footer = () => {
                     <div className="space-y-4">
                         <h3 className="text-lg font-semibold">Contact Details</h3>
                         <div className="space-y-2 text-sm text-muted-foreground">
-                            <div className="flex items-start gap-2">
+                            <Link target="_blank" href={'https://maps.app.goo.gl/PE1CfLkqXnWd1AFd7'} className="flex items-start gap-2">
                                 <MapPin className="w-4 h-4 mt-1 text-primary" />
                                 <div>
-                                    Harit Bhawan, <br /> 
-                                    Beside Vishal Mega Mart, <br /> 
-                                    Opp. Shakti Petrol Pump, <br /> 
-                                    Harmu Road, <br /> 
-                                    Ranchi-834001, Jharkhand. 
+                                    Harit Bhawan, <br />
+                                    Beside Vishal Mega Mart, <br />
+                                    Opp. Shakti Petrol Pump, <br />
+                                    Harmu Road, <br />
+                                    Ranchi-834001, Jharkhand.
                                 </div>
-                            </div>
+                            </Link>
                             <div className="flex items-center gap-2">
                                 <Mail className="w-4 h-4 text-primary" />
                                 <Button variant="link" className="px-0 text-muted-foreground">
@@ -108,19 +109,24 @@ export const Footer = () => {
                 {/* Legal & Copyright */}
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
                     <div className="flex gap-4">
-                        <Button variant="link" className="text-muted-foreground">
+                        <Link className={buttonVariants({
+                            variant: "link",
+                            className: "text-muted-foreground"
+                        })}
+                            href={'about-anish-enterprises'}
+                        >
                             About Us
-                        </Button>
-                        <Button variant="link" className="text-muted-foreground">
+                        </Link>
+                        <Button variant="link" disabled className="text-muted-foreground">
                             Privacy Policy
                         </Button>
-                        <Button variant="link" className="text-muted-foreground">
+                        <Button variant="link" disabled className="text-muted-foreground">
                             Terms of Use
                         </Button>
                     </div>
                     <p className="text-center">© {new Date().getFullYear()} Anish Enterprises. All Rights Reserved.</p>
                 </div>
             </div>
-        </footer>
+        </footer >
     )
 }

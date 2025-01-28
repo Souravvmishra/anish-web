@@ -18,7 +18,7 @@ export const AboutSection = () => {
                             About Anish Enterprises
                         </h2>
 
-                        <p className="text-lg text-muted-foreground">
+                        <p className="text-muted-foreground">
                             As Jharkhand&apos;s premier industrial solutions provider, we specialize in delivering high-quality material handling equipment and industrial components to manufacturing units across Eastern India.
                         </p>
 

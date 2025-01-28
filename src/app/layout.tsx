@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { Navbar } from "@/components/main/navbar";
 import { BottomBar } from "@/components/main/bottom-bar";
 import { Footer } from "@/components/main/footer";
+import { Toaster as ShadToaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
   title: "Anish Enterprises | Premium Sanitaryware & Plumbing Solutions in Jharkhand",
@@ -110,6 +111,7 @@ export default function RootLayout({
           {children}
         </div>
         <Toaster />
+        <ShadToaster />
         <Footer />
         <BottomBar />
       </body>

@@ -30,7 +30,7 @@ export async function sendEmail(
 ) {
     try {
         const mailOptions = {
-            from: `"Anish Enterprises - " <${process.env.SMTP_USER}>`, // Sender address
+            from: `"Anish Enterprises " <${process.env.SMTP_USER}>`, // Sender address
             to: Array.isArray(to) ? to.join(',') : to,        // Support multiple recipients
             subject,
             text,

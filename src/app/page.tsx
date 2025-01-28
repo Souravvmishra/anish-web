@@ -79,6 +79,9 @@ const page = () => {
     <>
       <div className='container px-4 mx-auto max-w-7xl py-8'>
         <LandingPage />
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          Brands we deal
+        </h2>
         <LogoWall items={brands} />
         <AboutSection />
         <ProductsSection />

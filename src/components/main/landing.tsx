@@ -1,6 +1,99 @@
+"use client"
+
 // LandingPage.tsx
 import { Button } from "@/components/ui/button"
-import { Play, Award, ShieldCheck, Factory, PackageCheck, Users } from "lucide-react"
+import { Play, Award, ShieldCheck, Factory, PackageCheck, Users, Loader2, MailCheck } from "lucide-react"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog"
+import { useState } from "react"
+import { useFormStatus } from "react-dom"
+import sendEmail from "@/actions/send-email"
+import { Label } from "../ui/label"
+import { Input } from "../ui/input"
+import { useToast } from "@/hooks/use-toast"
+
+const EmailForm = () => {
+    const [email, setEmail] = useState('')
+    const { toast } = useToast()
+
+    const SubmitButton = () => {
+        const { pending } = useFormStatus()
+        return (
+            <Button
+                type="submit"
+                disabled={pending}
+                className="w-full gap-2"
+            >
+                {pending ? (
+                    <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        Sending...
+                    </>
+                ) : (
+                    <>
+                        <PackageCheck className="w-4 h-4" />
+                        Get Catalog Now
+                    </>
+                )}
+            </Button>
+        )
+    }
+
+    return (
+        <DialogContent className="sm:max-w-[425px]">
+            <DialogHeader>
+                <DialogTitle className="flex items-center gap-2">
+                    <MailCheck className="w-4 h-4" />
+                    Get Product Catalog
+                </DialogTitle>
+                <DialogDescription>
+                    Enter your work email and we&apos;ll send the full catalog instantly.
+                </DialogDescription>
+            </DialogHeader>
+
+            <form
+                action={async (formData) => {
+                    const res = await sendEmail(
+                        formData.get('email') as string,
+                        'Anish Enterprises Product Catalog',
+                        `Please find attached the latest product catalog.\n\nDownload link: [Catalog PDF]`,
+                        `<p>Please find attached the latest product catalog.</p>
+             <p><a href="#">Download Catalog PDF</a></p>`
+                    )
+
+                    if (res.error) {
+                        toast({
+                            title: "Delivery Failed",
+                            description: "Couldn't send catalog. Please try again.",
+                            variant: "destructive",
+                        })
+                    } else {
+                        toast({
+                            title: "Catalog Sent!",
+                            description: "Check your email for the download link",
+                        })
+                        setEmail('')
+                    }
+                }}
+                className="space-y-4"
+            >
+                <div className="grid gap-2">
+                    <Label htmlFor="email">Work Email</Label>
+                    <Input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="name@company.com"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
+                </div>
+
+                <SubmitButton />
+            </form>
+        </DialogContent>
+    )
+}
 
 export const LandingPage = () => {
     return (
@@ -25,10 +118,15 @@ export const LandingPage = () => {
                     </p>
 
                     <div className="flex flex-col gap-4 mt-10 sm:flex-row sm:justify-center">
-                        <Button size="lg" className="rounded-full px-8 gap-2">
-                            <PackageCheck className="w-5 h-5" />
-                            Request Catalog
-                        </Button>
+                        <Dialog>
+                            <DialogTrigger asChild>
+                                <Button size="lg" className="rounded-full px-8 gap-2">
+                                    <PackageCheck className="w-5 h-5" />
+                                    Request Catalog
+                                </Button>
+                            </DialogTrigger>
+                            <EmailForm />
+                        </Dialog>
                         <Button variant="outline" size="lg" className="rounded-full px-8 gap-2">
                             <Play className="w-5 h-5" />
                             Facility Tour
