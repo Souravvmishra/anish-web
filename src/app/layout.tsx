@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
+import { Navbar } from "@/components/main/navbar";
+import { BottomBar } from "@/components/main/bottom-bar";
+import { Footer } from "@/components/main/footer";
 
 export const metadata: Metadata = {
   title: "Anish Enterprises | Premium Sanitaryware & Plumbing Solutions in Jharkhand",
@@ -21,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Anish Enterprises",
     images: [
       {
-        url: "https://www.anishenterprises.in/og-image.jpg",
+        url: "https://anish-web.vercel.app/anish-logo.jpg",
         width: 1200,
         height: 630,
         alt: "Anish Enterprises Showroom",
@@ -34,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Anish Enterprises | Trusted Plumbing Solutions Since 2001",
     description: "Jharkhand's leading supplier of sanitaryware, bath fittings & plumbing materials with 600+ satisfied clients",
-    images: ["https://www.anishenterprises.in/twitter-image.jpg"],
+    images: ["https://anish-web.vercel.app/anish-logo.jpg"],
   },
   alternates: {
     canonical: "https://www.anishenterprises.in",
@@ -100,8 +104,14 @@ export default function RootLayout({
           })}
         </script>
       </head>
-      <body className={`font-sans antialiased`}>
-        {children}
+      <body className={`font-sans antialiased playpen-sans`}>
+        <Navbar />
+        <div className="pt-16">
+          {children}
+        </div>
+        <Toaster />
+        <Footer />
+        <BottomBar />
       </body>
     </html>
   );
