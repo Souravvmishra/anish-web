@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, X } from "lucide-react"
+import Link from 'next/link'
 
 const useScrollTrigger = (threshold = 100) => {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -34,14 +35,21 @@ const useScrollTrigger = (threshold = 100) => {
 
 export const Navbar = () => {
     const isScrolled = useScrollTrigger(50)
-    const navItems = ['About', 'Products', 'Brands', 'Clients', 'Awards', 'Contact']
+    const navItems = [
+        { name: 'About', href: '/about' },
+        { name: 'Products', href: '/products-we-deal' },
+        { name: 'Brands', href: '/brands-we-deal' },
+        { name: 'Clients', href: '/clients' },
+        { name: 'Awards', href: '/awards' },
+        { name: 'Contact', href: '/contact-anish-enterprises' }
+    ]
 
     return (
         <header className={`fixed w-full top-0 z-50 bg-background/80 backdrop-blur-md border-b transition-all duration-300 ${isScrolled ? 'py-3 shadow-sm' : 'py-6'} ${isScrolled ? 'border-border/50' : 'border-transparent'}`}>
             <div className="container px-4 mx-auto">
                 <div className="flex items-center justify-between gap-4">
                     {/* Logo */}
-                    <a href="#" className="flex items-center gap-3 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+                    <Link href="/" className="flex items-center gap-3 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
                         <img
                             className={`transition-all duration-300 ${isScrolled ? 'h-8' : 'h-10'}`}
                             src="/anish-logo.jpg"
@@ -50,30 +58,34 @@ export const Navbar = () => {
                         <span className={`${isScrolled ? 'text-xs' : 'text-sm'} font-semibold transition-all duration-300 text-foreground`}>
                             Anish <br /> Enterprises
                         </span>
-                    </a>
+                    </Link>
 
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center gap-8">
                         {navItems.map((item) => (
-                            <a
-                                key={item}
-                                href="#"
+                            <Link
+                                key={item.name}
+                                href={item.href}
                                 className={`text-sm font-medium transition-colors hover:text-primary ${isScrolled ? 'text-foreground' : 'text-muted-foreground'
                                     }`}
                             >
-                                {item}
-                            </a>
+                                {item.name}
+                            </Link>
                         ))}
                     </nav>
 
                     {/* Desktop Auth Buttons */}
                     <div className="hidden lg:flex items-center gap-2">
-                        <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
-                            Customer Login
-                        </Button>
-                        <Button>
-                            Sign up
-                        </Button>
+                        <Link href="/login">
+                            <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
+                                Customer Login
+                            </Button>
+                        </Link>
+                        <Link href="/signup">
+                            <Button>
+                                Sign up
+                            </Button>
+                        </Link>
                     </div>
 
                     {/* Mobile Navigation */}
@@ -98,23 +110,27 @@ export const Navbar = () => {
 
                                 <nav className="grid gap-2">
                                     {navItems.map((item) => (
-                                        <a
-                                            key={item}
-                                            href="#"
+                                        <Link
+                                            key={item.name}
+                                            href={item.href}
                                             className="px-4 py-2 rounded-md hover:bg-accent transition-colors text-foreground"
                                         >
-                                            {item}
-                                        </a>
+                                            {item.name}
+                                        </Link>
                                     ))}
                                 </nav>
 
                                 <div className="flex flex-col gap-2 mt-4">
-                                    <Button variant="outline">
-                                        Customer Login
-                                    </Button>
-                                    <Button>
-                                        Sign up
-                                    </Button>
+                                    <Link href="/login">
+                                        <Button variant="outline" className="w-full">
+                                            Customer Login
+                                        </Button>
+                                    </Link>
+                                    <Link href="/signup">
+                                        <Button className="w-full">
+                                            Sign up
+                                        </Button>
+                                    </Link>
                                 </div>
                             </div>
                         </SheetContent>

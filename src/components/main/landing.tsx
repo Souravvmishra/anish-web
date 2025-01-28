@@ -51,6 +51,25 @@ export const LandingPage = () => {
                     </div>
                 </div>
 
+                <div className="mt-8 mb-20">
+                    <div className="rounded-xl overflow-hidden border shadow-lg aspect-video">
+                        <video
+                            className="w-full h-full object-cover"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                        >
+                            <source src="https://videos.pexels.com/video-files/7963177/7963177-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p className="mt-4 text-sm text-center text-muted-foreground">
+                        A glimpse into our state-of-the-art manufacturing facility
+                    </p>
+                </div>
+
+
                 <div className="mt-24 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="p-6 border rounded-xl bg-muted/10">
                         <Factory className="w-8 h-8 text-primary" />
