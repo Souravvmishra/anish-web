@@ -1,6 +1,5 @@
 import { AboutSection } from '@/components/main/about-anish'
 import { ContactForm } from '@/components/main/contact-form'
-import { Footer } from '@/components/main/footer'
 import { LandingPage } from '@/components/main/landing'
 import ProductsSection from '@/components/main/products-we-offer'
 import LogoWall from '@/components/ui/logo-wall'
@@ -83,7 +82,6 @@ const page = () => {
         <AboutSection />
         <ProductsSection />
         <ContactForm />
-        <Footer />
       </div>
     </>
   )
