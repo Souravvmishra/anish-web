@@ -36,7 +36,7 @@ const useScrollTrigger = (threshold = 100) => {
 export const Navbar = () => {
     const isScrolled = useScrollTrigger(50)
     const navItems = [
-        { name: 'About', href: '/about' },
+        { name: 'About', href: '/about-anish-enterprises' },
         { name: 'Products', href: '/products-we-deal' },
         { name: 'Brands', href: '/brands-we-deal' },
         { name: 'Clients', href: '/clients' },
