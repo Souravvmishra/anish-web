@@ -37,7 +37,7 @@ const iconVariants = {
     }
 };
 
-export const ProductsPage = () => {
+const ProductsPage = () => {
     const sanitaryProducts = [
         {
             name: "Bath Tubs",
