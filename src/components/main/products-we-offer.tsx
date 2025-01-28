@@ -1,19 +1,16 @@
 // ProductsWeOffer.tsx
 import { Button } from "@/components/ui/button";
 import {
-    HardHat,
-    Drill,
-    Warehouse,
-    Palette,
-    Wrench,
-    PackageSearch,
+    Anchor,
     ArrowRight,
+    Bolt,
+    Box,
+    BriefcaseConveyorBelt,
     Forklift,
     Gauge,
-    Bolt,
-    Anchor,
-    Box,
-    BriefcaseConveyorBelt
+    PackageSearch,
+    Warehouse,
+    Wrench
 } from "lucide-react";
 import Link from "next/link";
 import { JSX } from "react";
