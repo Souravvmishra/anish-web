@@ -1,10 +1,11 @@
+// app/products-we-deal/page.tsx
 "use client"
 
 import { motion } from "framer-motion";
 import { ContactForm } from "@/components/main/contact-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import { Product, ProductCategory, products } from "@/data/products";
+import { Product, products } from "@/data/products";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 
 const cardVariants = {
@@ -125,27 +126,37 @@ const ProductsPage = () => {
                     animate={{ opacity: 1, y: 0 }}
                     className="text-5xl font-bold mb-12 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
                 >
-                    Premium Product Collection
+                    Our Brand Partners & Products
                 </motion.h1>
 
-                {products.map((section: ProductCategory, index: number) => (
-                    <section key={index} className="mb-16">
-                        <motion.h2
+                {products.map((brandGroup, index) => (
+                    <section key={brandGroup.brand + index} className="mb-16">
+                        <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            className="text-xl mb-8 text-foreground border-l-2 border-primary pl-2"
+                            className="mb-8"
                         >
-                            {section.category}
-                        </motion.h2>
+                            <h2 className="text-3xl font-bold text-foreground mb-6">
+                                {brandGroup.brand}
+                            </h2>
+                            <div className="h-1 w-24 bg-primary rounded-full" />
+                        </motion.div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                            {section.items.map((product: Product, idx: number) => (
-                                <ProductCard
-                                    key={`${product.name}-${idx}`}
-                                    product={product}
-                                />
-                            ))}
-                        </div>
+                        {brandGroup.categories.map((category) => (
+                            <div key={category.category} className="mb-12">
+                                <h3 className="text-xl font-semibold mb-6 text-muted-foreground">
+                                    {category.category}
+                                </h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                                    {category.items.map((product) => (
+                                        <ProductCard
+                                            key={`${brandGroup.brand}-${product.name}`}
+                                            product={product}
+                                        />
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
                     </section>
                 ))}
 

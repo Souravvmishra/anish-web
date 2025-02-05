@@ -28,9 +28,9 @@ export const AboutSection = () => {
                                     <ShieldCheck className="w-6 h-6 text-primary" />
                                 </div>
                                 <div>
-                                    <h3 className="font-semibold">Certified Quality</h3>
+                                    <h3 className="font-semibold">Award-Winning Quality</h3>
                                     <p className="text-muted-foreground">
-                                        ISO 9001:2015 certified suppliers of industrial trolleys, racks, and material handling systems
+                                        Recognized suppliers of industrial trolleys, racks, and material handling systems with industry-leading standards.
                                     </p>
                                 </div>
                             </div>

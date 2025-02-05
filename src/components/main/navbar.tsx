@@ -53,7 +53,7 @@ export const Navbar = () => {
 
                     {/* Desktop Auth Buttons */}
                     <div className="hidden lg:flex items-center gap-2">
-                        <Link href="tel:+919835155006">
+                        <Link href="tel:+9170335598001">
                             <Button
                                 variant={!isScrolled ? 'outline' : 'default'}
                             >

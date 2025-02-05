@@ -45,7 +45,7 @@ export const Footer = () => {
                     {/* Contact Info */}
                     <div className="space-y-4">
                         <h3 className="text-lg font-semibold">Contact Details</h3>
-                        <div className="space-y-2 text-sm text-muted-foreground">
+                        <div className="space-y-1 text-sm text-muted-foreground">
                             <Link target="_blank" href={'https://maps.app.goo.gl/PE1CfLkqXnWd1AFd7'} className="flex items-start gap-2">
                                 <MapPin className="w-4 h-4 mt-1 text-primary" />
                                 <div>
@@ -64,9 +64,18 @@ export const Footer = () => {
                             </div>
                             <div className="flex items-center gap-2">
                                 <Phone className="w-4 h-4 text-primary" />
-                                <div className="space-y-1">
-                                    <Button variant="link" className="px-0 text-muted-foreground">+91 65122 83633</Button>
-                                    <Button variant="link" className="px-0 text-muted-foreground">+91 98351 55006</Button>
+                                <div className="gap-2">
+                                    <Button variant="link" className=" px-0 text-muted-foreground">
+                                        +91 65122 83633
+                                    </Button>
+                                </div>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <Phone className="w-4 h-4 text-primary" />
+                                <div className="">
+                                    <Button variant="link" className="px-0 text-muted-foreground">
+                                        +91 65122 83633
+                                    </Button>
                                 </div>
                             </div>
                         </div>
@@ -80,8 +89,9 @@ export const Footer = () => {
                                 <h3 className="text-lg font-semibold">Certifications</h3>
                             </div>
                             <p className="mt-2 text-sm text-muted-foreground">
-                                MSME Registered<br />
-                                GSTIN: 27AAWFA3648J1ZK
+                                MSME:
+                                Udyam/JH/20/0016458<br />
+                                GSTIN: 20AKQPS6896LIZ7
                             </p>
                         </div>
 

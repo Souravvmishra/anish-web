@@ -140,13 +140,14 @@ export const LandingPage = () => {
                         </div>
                         <div className="p-4 border rounded-lg bg-muted/20">
                             <div className="text-2xl font-bold text-primary">500+</div>
-                            <div className="text-sm text-muted-foreground">Enterprise Clients</div>
+                            <div className="text-sm text-muted-foreground">Enterprise</div>
                         </div>
                         <div className="p-4 border rounded-lg bg-muted/20">
-                            <div className="text-2xl font-bold text-primary">ISO</div>
-                            <div className="text-sm text-muted-foreground">9001:2015 Certified</div>
+                            <div className="text-2xl font-bold text-primary">100+</div>
+                            <div className="text-sm text-muted-foreground">Cities Presence</div>
                         </div>
                     </div>
+
                 </div>
 
                 <div className="mt-8 mb-20">

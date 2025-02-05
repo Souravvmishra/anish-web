@@ -257,7 +257,7 @@ export const ContactForm = () => {
                                 <AlertCircle className="w-5 h-5 text-destructive" />
                                 <div className="text-sm text-destructive">
                                     <p>For urgent technical support, call our 24/7 helpline:</p>
-                                    <p className="font-medium mt-1">+1 (800) 123-4567</p>
+                                    <p className="font-medium mt-1">+91 70335 598001</p>
                                 </div>
                             </CardContent>
                         </Card>
