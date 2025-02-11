@@ -1,4 +1,4 @@
-import { MapPin, Mail, Phone, ShieldCheck, ClipboardList, Facebook, Twitter, Linkedin } from "lucide-react"
+import { MapPin, Mail, Phone, ClipboardList, Facebook, Twitter, Linkedin } from "lucide-react"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
@@ -21,24 +21,29 @@ export const Footer = () => {
                                 <p className="text-sm text-muted-foreground">Material Handling Specialists</p>
                             </div>
                         </div>
-                        <p className="text-sm text-muted-foreground">
-                            Trusted partners in industrial solutions since 2005, serving Maharashtra&apos;s manufacturing sector.
+                        <p className="text-sm text-muted-foreground max-w-2xl">
+                            Leading distributor and authorized stockist of premium sanitary ware, bath fittings, and plumbing solutions serving Jharkhand and surrounding regions since 2001. <br /><br />With over two decades of trusted service, we offer comprehensive solutions for residential and commercial projects.
                         </p>
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                            <ShieldCheck className="w-4 h-4 text-primary" />
-                            <span>ISO 9001:2015 Certified</span>
-                        </div>
                     </div>
 
                     {/* Products & Services */}
                     <div className="space-y-4">
                         <h3 className="text-lg font-semibold">Our Expertise</h3>
                         <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li><Button variant="link" className="px-0 text-muted-foreground">Industrial Trolleys</Button></li>
-                            <li><Button variant="link" className="px-0 text-muted-foreground">Storage Racks</Button></li>
-                            <li><Button variant="link" className="px-0 text-muted-foreground">Material Handling</Button></li>
-                            <li><Button variant="link" className="px-0 text-muted-foreground">Factory Equipment</Button></li>
-                            <li><Button variant="link" className="px-0 text-muted-foreground">Custom Solutions</Button></li>
+                            {[
+                                "Pipes & Fittings",
+                                "Faucets & Sanitary Ware",
+                                "Bathroom Accessories",
+                                "Water Heaters",
+                                "Kitchen Chimneys",
+                                "Motors & Pumps"
+                            ].map((category, index) => (
+                                <li key={index}>
+                                    <Button variant="link" className="px-0 text-muted-foreground">
+                                        {category}
+                                    </Button>
+                                </li>))
+                            }
                         </ul>
                     </div>
 

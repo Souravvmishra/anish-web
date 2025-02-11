@@ -11,7 +11,7 @@ export const AboutSection = () => {
                     <div className="space-y-6">
                         <div className="inline-flex items-center gap-2 px-4 py-2 text-sm border rounded-full text-muted-foreground bg-muted">
                             <Trophy className="w-4 h-4 text-primary" />
-                            Industry Leaders Since 1998
+                            Industry Leaders Since 2001
                         </div>
 
                         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -69,16 +69,12 @@ export const AboutSection = () => {
                             </h3>
                             <ul className="mt-4 space-y-4 text-sm text-muted-foreground">
                                 <li className="flex gap-2">
-                                    <span className="font-medium text-foreground">1998:</span>
+                                    <span className="font-medium text-foreground">2001:</span>
                                     Founded in Ranchi as industrial equipment suppliers
                                 </li>
                                 <li className="flex gap-2">
                                     <span className="font-medium text-foreground">2005:</span>
                                     Expanded to full-scale material handling solutions
-                                </li>
-                                <li className="flex gap-2">
-                                    <span className="font-medium text-foreground">2015:</span>
-                                    Achieved ISO 9001:2015 certification
                                 </li>
                                 <li className="flex gap-2">
                                     <span className="font-medium text-foreground">2023:</span>

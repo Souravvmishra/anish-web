@@ -102,7 +102,7 @@ export const LandingPage = () => {
                 <div className="max-w-3xl mx-auto text-center">
                     <div className="inline-flex items-center gap-2 px-6 py-2 text-sm border rounded-full text-muted-foreground bg-muted">
                         <Award className="w-4 h-4 text-primary" />
-                        Trusted Industrial Solutions Since 1998
+                        Trusted Industrial Solutions Since 2001
                     </div>
 
                     <h1 className="mt-8 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
