@@ -15,7 +15,7 @@ export interface BrandProductGroup {
     }[];
 }
 
-export const products: BrandProductGroup[] = [
+export const hindwareProducts: BrandProductGroup[] = [
     {
         brand: "Hindware",
         categories: [

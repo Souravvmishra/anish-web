@@ -5,8 +5,11 @@ import { motion } from "framer-motion";
 import { ContactForm } from "@/components/main/contact-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import { Product, products } from "@/data/products";
+import { Product, hindwareProducts } from "@/data/products";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { groheProducts } from "@/data/grohe_faucets";
+import { americanProducts } from "@/data/american_standard";
+import { spykarceraProducts } from "@/data/spykar_cera";
 
 const cardVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -111,6 +114,8 @@ const ProductCard = ({ product }: { product: Product }) => (
 );
 
 const ProductsPage = () => {
+    const products = [...hindwareProducts, ...groheProducts, ...americanProducts, ...spykarceraProducts];
+
     return (
         <div className="bg-background min-h-screen">
             <main className="container max-w-7xl mx-auto px-4 py-8">
