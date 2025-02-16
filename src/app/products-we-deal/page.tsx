@@ -14,6 +14,8 @@ import { groheProducts } from "@/data/grohe_faucets";
 import { americanProducts } from "@/data/american_standard";
 import { spykarceraProducts } from "@/data/spykar_cera";
 import { Search, X } from 'lucide-react';
+import { finolexUtkarshProducts } from '@/data/finolex';
+import { ashirvadProducts } from '@/data/aashirwadProducts';
 
 const ProductCard = ({ product }: { product: Product }) => (
     <motion.div
@@ -75,7 +77,7 @@ const ProductCard = ({ product }: { product: Product }) => (
 );
 
 const ProductsPage = () => {
-    const allProducts = [...hindwareProducts, ...groheProducts, ...americanProducts, ...spykarceraProducts];
+    const allProducts = [...hindwareProducts, ...groheProducts, ...americanProducts, ...spykarceraProducts, ...finolexUtkarshProducts, ...ashirvadProducts];
     const [selectedBrand, setSelectedBrand] = useState<string>('all');
     const [selectedCategory, setSelectedCategory] = useState<string>('all');
     const [searchQuery, setSearchQuery] = useState('');
