@@ -1,35 +1,134 @@
 "use client"
 
-
-import React, { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import { motion } from "framer-motion";
 import { ContactForm } from "@/components/main/contact-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Product, hindwareProducts } from "@/data/products";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { ChevronLeft, Search, X } from 'lucide-react';
+
+// Brand-specific imports
 import { groheProducts } from "@/data/grohe_faucets";
 import { americanProducts } from "@/data/american_standard";
 import { spykarceraProducts } from "@/data/spykar_cera";
-import { Search, X } from 'lucide-react';
 import { finolexUtkarshProducts } from '@/data/finolex';
 import { ashirvadProducts } from '@/data/aashirwadProducts';
 
+// Types
+interface Product {
+    name: string;
+    material: string;
+    brands: string[];
+    variants: number;
+    price: string;
+    imageUrl: string;
+}
+
+interface BrandProductGroup {
+    brand: string;
+    categories: {
+        category: string;
+        items: Product[];
+    }[];
+}
+
+// Combine all product groups
+const allProductGroups: BrandProductGroup[] = [
+    ...groheProducts,
+    ...americanProducts,
+    ...spykarceraProducts,
+    ...finolexUtkarshProducts,
+    ...ashirvadProducts
+];
+
+const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.4,
+            ease: "easeOut"
+        }
+    },
+    hover: {
+        y: -5,
+        scale: 1.02,
+        transition: {
+            duration: 0.2,
+            ease: "easeInOut"
+        }
+    },
+    tap: { scale: 0.98 }
+};
+
+const imageVariants = {
+    hover: {
+        scale: 1.05,
+        transition: {
+            duration: 0.3,
+            ease: "easeInOut"
+        }
+    }
+};
+
+const BrandCard = ({ brand, onSelect }: { brand: string; onSelect: () => void }) => (
+    <motion.div
+        variants={cardVariants}
+        initial="hidden"
+        animate="visible"
+        whileHover="hover"
+        whileTap="tap"
+        className="h-full"
+        onClick={onSelect}
+    >
+        <Card className="h-full relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10">
+            <CardContent className="p-6">
+                <CardTitle className="text-2xl font-bold text-primary">
+                    {brand}
+                </CardTitle>
+                <div className="h-1 w-16 bg-primary/20 mt-4 group-hover:bg-primary transition-colors" />
+            </CardContent>
+        </Card>
+    </motion.div>
+);
+
+const CategoryCard = ({ category, onSelect }: { category: string; onSelect: () => void }) => (
+    <motion.div
+        variants={cardVariants}
+        initial="hidden"
+        animate="visible"
+        whileHover="hover"
+        whileTap="tap"
+        className="h-full"
+        onClick={onSelect}
+    >
+        <Card className="h-full relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10">
+            <CardContent className="p-6">
+                <CardTitle className="text-xl font-bold text-primary">
+                    {category}
+                </CardTitle>
+                <div className="h-1 w-16 bg-primary/20 mt-4 group-hover:bg-primary transition-colors" />
+            </CardContent>
+        </Card>
+    </motion.div>
+);
+
 const ProductCard = ({ product }: { product: Product }) => (
     <motion.div
-        layout
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+        variants={cardVariants}
+        initial="hidden"
+        animate="visible"
+        whileHover="hover"
+        whileTap="tap"
         className="h-full"
     >
         <Card className="h-full relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10">
             <div className="relative h-48 overflow-hidden">
-                <motion.div className="absolute inset-0">
+                <motion.div variants={imageVariants} className="absolute inset-0">
                     <img
-                        src={`${product.imageUrl}`}
+                        src={product.imageUrl}
                         alt={product.name}
                         className="object-cover w-full h-full"
                     />
@@ -50,12 +149,13 @@ const ProductCard = ({ product }: { product: Product }) => (
 
                     <div className="flex flex-wrap gap-2">
                         {product.brands.map((brand, i) => (
-                            <span
+                            <motion.div
                                 key={i}
-                                className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full"
+                                whileHover={{ scale: 1.05 }}
+                                className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full backdrop-blur-sm"
                             >
                                 {brand}
-                            </span>
+                            </motion.div>
                         ))}
                     </div>
 
@@ -67,9 +167,15 @@ const ProductCard = ({ product }: { product: Product }) => (
 
                 <Button
                     variant="outline"
-                    className="w-full bg-transparent hover:bg-primary/10 border-primary/20 hover:border-primary/30 font-semibold"
+                    className="w-full bg-transparent hover:bg-primary/10 border-primary/20 hover:border-primary/30 font-semibold relative overflow-hidden"
                 >
-                    Explore Options
+                    <span className="relative z-10">Explore Options</span>
+                    <motion.div
+                        className="absolute inset-0 bg-primary/10"
+                        initial={{ width: 0 }}
+                        whileHover={{ width: "100%" }}
+                        transition={{ duration: 0.3 }}
+                    />
                 </Button>
             </CardContent>
         </Card>
@@ -77,150 +183,114 @@ const ProductCard = ({ product }: { product: Product }) => (
 );
 
 const ProductsPage = () => {
-    const allProducts = [...hindwareProducts, ...groheProducts, ...americanProducts, ...spykarceraProducts, ...finolexUtkarshProducts, ...ashirvadProducts];
-    const [selectedBrand, setSelectedBrand] = useState<string>('all');
-    const [selectedCategory, setSelectedCategory] = useState<string>('all');
-    const [searchQuery, setSearchQuery] = useState('');
+    const [selectedBrand, setSelectedBrand] = useState<string | null>(null);
+    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+    const [searchQuery, setSearchQuery] = useState("");
 
-    // Get unique brands and categories
-    const brands = useMemo(() => ['all', ...new Set(allProducts.map(p => p.brand))], []);
-    const categories = useMemo(() => {
-        const cats = new Set<string>();
-        allProducts.forEach(brand => {
-            brand.categories.forEach(cat => cats.add(cat.category));
-        });
-        return ['all', ...Array.from(cats)];
-    }, []);
+    // Get unique brands
+    const uniqueBrands = [...new Set(allProductGroups.map(group => group.brand))];
 
-    // Filter products based on selection
-    const filteredProducts = useMemo(() => {
-        let filtered = allProducts;
+    const selectedBrandGroup = allProductGroups.find(group => group.brand === selectedBrand);
 
-        if (selectedBrand !== 'all') {
-            filtered = filtered.filter(p => p.brand === selectedBrand);
+    const breadcrumbItems = [
+        { href: "/", title: "Home" },
+        { href: "/products-we-deal", title: "Products" },
+        ...(selectedBrand ? [{ href: `/products-we-deal/${selectedBrand}`, title: selectedBrand }] : []),
+        ...(selectedCategory ? [{ href: `/products-we-deal/${selectedBrand}/${selectedCategory}`, title: selectedCategory }] : [])
+    ];
+
+    const handleBack = () => {
+        if (selectedCategory) {
+            setSelectedCategory(null);
+        } else if (selectedBrand) {
+            setSelectedBrand(null);
         }
-
-        return filtered.map(brandGroup => ({
-            ...brandGroup,
-            categories: brandGroup.categories
-                .filter(cat => selectedCategory === 'all' || cat.category === selectedCategory)
-                .map(cat => ({
-                    ...cat,
-                    items: cat.items.filter(item =>
-                        item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                        item.material.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                        item.brands.some(b => b.toLowerCase().includes(searchQuery.toLowerCase()))
-                    )
-                }))
-                .filter(cat => cat.items.length > 0)
-        })).filter(brand => brand.categories.length > 0);
-    }, [selectedBrand, selectedCategory, searchQuery]);
+    };
 
     return (
         <div className="bg-background min-h-screen">
             <main className="container max-w-7xl mx-auto px-4 py-8">
-                <Breadcrumbs
-                    items={[
-                        { href: "/", title: "Home" },
-                        { href: "/products-we-deal", title: "Products" },
-                    ]}
-                />
+                <Breadcrumbs items={breadcrumbItems} />
 
-                <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="text-5xl font-bold mb-12 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
-                >
-                    Our Brand Partners & Products
-                </motion.h1>
+                {(selectedBrand || selectedCategory) && (
+                    <Button
+                        variant="ghost"
+                        onClick={handleBack}
+                        className="mb-6"
+                    >
+                        <ChevronLeft className="w-4 h-4" /> Back
+                    </Button>
+                )}
 
-                <div className="sticky top-16 z-10 bg-background/80 backdrop-blur p-4 rounded-lg mb-8">
-                    <div className="flex flex-col md:flex-row gap-4">
-                        <div className="flex-1">
-                            <div className="relative">
-                                <Search className="w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground" />
-                                <Input
-                                    placeholder="Search products..."
-                                    value={searchQuery}
-                                    onChange={(e) => setSearchQuery(e.target.value)}
-                                    className="pl-10 bg-background"
-                                />
-                                {searchQuery && (
-                                    <button
-                                        onClick={() => setSearchQuery('')}
-                                        className="absolute right-3 top-1/2 transform -translate-y-1/2"
-                                    >
-                                        <X className="h-4 w-4 text-muted-foreground" />
-                                    </button>
-                                )}
-                            </div>
+                <div className="flex items-center justify-between mb-8">
+
+                    <motion.h1
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="text-4xl font-bold "
+                    >
+                        {!selectedBrand
+                            ? "Our Brand Partners"
+                            : !selectedCategory
+                                ? `${selectedBrand} Products`
+                                : `${selectedBrand} ${selectedCategory}`
+                        }
+                    </motion.h1>
+
+                    {selectedCategory && (
+                        <div className="relative">
+                            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
+                            <input
+                                type="text"
+                                placeholder="Search products..."
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                                className="pl-10 pr-10 py-2 rounded-full bg-muted/50 border border-muted-foreground/20 focus:outline-none focus:ring-2 focus:ring-primary/20"
+                            />
+                            {searchQuery && (
+                                <button
+                                    onClick={() => setSearchQuery("")}
+                                    className="absolute right-3 top-1/2 transform -translate-y-1/2"
+                                >
+                                    <X className="w-4 h-4 text-muted-foreground" />
+                                </button>
+                            )}
                         </div>
-                        <Select value={selectedBrand} onValueChange={setSelectedBrand}>
-                            <SelectTrigger className="w-[200px]">
-                                <SelectValue placeholder="Select Brand" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                {brands.map(brand => (
-                                    <SelectItem key={brand} value={brand}>
-                                        {brand === 'all' ? 'All Brands' : brand}
-                                    </SelectItem>
-                                ))}
-                            </SelectContent>
-                        </Select>
-                        <Select value={selectedCategory} onValueChange={setSelectedCategory}>
-                            <SelectTrigger className="w-[200px]">
-                                <SelectValue placeholder="Select Category" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                {categories.map(category => (
-                                    <SelectItem key={category} value={category}>
-                                        {category === 'all' ? 'All Categories' : category}
-                                    </SelectItem>
-                                ))}
-                            </SelectContent>
-                        </Select>
-                    </div>
+                    )}
                 </div>
 
-                <AnimatePresence mode="wait">
-                    {filteredProducts.map((brandGroup) => (
-                        <section key={brandGroup.brand} className="mb-16">
-                            <motion.div
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                className="mb-8"
-                            >
-                                <h2 className="text-3xl font-bold text-foreground mb-6">
-                                    {brandGroup.brand}
-                                </h2>
-                                <div className="h-1 w-24 bg-primary rounded-full" />
-                            </motion.div>
-
-                            {brandGroup.categories.map((category) => (
-                                <div key={category.category} className="mb-12">
-                                    <h3 className="text-xl font-semibold mb-6 text-muted-foreground">
-                                        {category.category}
-                                    </h3>
-                                    <motion.div
-                                        layout
-                                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
-                                    >
-                                        <AnimatePresence>
-                                            {category.items.map((product) => (
-                                                <ProductCard
-                                                    key={`${brandGroup.brand}-${product.name}`}
-                                                    product={product}
-                                                />
-                                            ))}
-                                        </AnimatePresence>
-                                    </motion.div>
-                                </div>
-                            ))}
-                        </section>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    {!selectedBrand && uniqueBrands.map((brand, index) => (
+                        <BrandCard
+                            key={index}
+                            brand={brand}
+                            onSelect={() => setSelectedBrand(brand)}
+                        />
                     ))}
-                </AnimatePresence>
 
-                <ContactForm />
+                    {selectedBrand && !selectedCategory && selectedBrandGroup?.categories.map((category, index) => (
+                        <CategoryCard
+                            key={index}
+                            category={category.category}
+                            onSelect={() => setSelectedCategory(category.category)}
+                        />
+                    ))}
+
+                    {selectedBrand && selectedCategory && selectedBrandGroup?.categories
+                        .find(c => c.category === selectedCategory)
+                        ?.items
+                        .filter(product =>
+                            searchQuery
+                                ? product.name.toLowerCase().includes(searchQuery.toLowerCase())
+                                : true
+                        )
+                        .map((product, index) => (
+                            <ProductCard key={index} product={product} />
+                        ))
+                    }
+                </div>
+
+                {selectedCategory && <ContactForm />}
             </main>
         </div>
     );

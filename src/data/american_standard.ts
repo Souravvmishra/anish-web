@@ -28,7 +28,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/FFAS1603-101500BF0.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/20190624-Kastello_3-Hole-Basin-Mixer_Pop-up-Drain_HR.jpg"
                     },
                     {
                         name: "Acacia Evolution 3-Hole Basin Mixer FFAS1303-102500BF0",
@@ -36,7 +36,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/FFAS1303-102500BF0.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Acacia-Evolution-3-Hole-Basin-Mixer-image.jpg"
                     },
                     {
                         name: "Acacia Evolution Basin Mixer FFAS1301-102500BF0",
@@ -44,7 +44,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/FFAS1301-102500BF0.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Acacia-Evolution-Basin-Mixer-image.jpg"
                     },
                     {
                         name: "Acacia Evolution Basin Mono FFAS1306-101500BF0",
@@ -52,7 +52,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/FFAS1306-101500BF0.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Acacia-Evolution-Basin-Mono-image.jpg"
                     },
                     {
                         name: "Acacia Evolution High Spout Basin Mixer FFAS1305-102500BF0",
@@ -68,7 +68,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/FFAS1304-102500BF0.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Acacia-Evolution-High-Spout-Basin-Mixer-image.jpg"
                     },
                     {
                         name: "Kastello Basin Mixer with Pop-Up Drain FFAS1601-101500BF0",
@@ -76,7 +76,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/FFAS1601-101500BF0.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Acacia-Evolution-Wall-Mount-Basin-Mixer-image.jpg"
                     },
                     {
                         name: "Compact Codie Codie Basin Mixer FFASB201-101501BF0",
@@ -84,7 +84,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/FFASB201-101501BF0.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Simplica-Basin-Mixer-image.jpg"
                     },
                     {
                         name: "Compact Codie Codie Basin Mono FFASB206-101500BF0",
@@ -92,7 +92,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/FFASB206-101500BF0.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Simplica-Basin-Mono-image.jpg"
                     },
                     {
                         name: "Concept Square Basin Mixer FFAS0401-151500BA0",
@@ -100,7 +100,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/FFAS0401-151500BA0.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Concept-Square-Basin-Mixer-image.jpg"
                     },
                     {
                         name: "Cygnet Basin Mixer (w/o Pop-Up) FFAS0301-151500BA0",
@@ -108,7 +108,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/FFAS0301-151500BA0.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Cygnet-Basin-Mixer-wo-Pop-Up-image.jpg"
                     },
                     {
                         name: "Cygnet Extended Basin Mixer (w/o Pop-Up) FFAS0303-151500BA0",
@@ -116,7 +116,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/FFAS0303-151500BA0.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Cygnet-Extended-Basin-Mixer-wo-Pop-Up-image.jpg"
                     }
                 ]
             },
@@ -129,7 +129,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/glass-holder.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Acacia-Evolution-Glass-Holder-image.jpg"
                     },
                     {
                         name: "Paper Holder",
@@ -137,7 +137,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/paper-holder.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Acacia-Evolution-Paper-Holder-image.jpg"
                     },
                     {
                         name: "Robe Hook",
@@ -145,7 +145,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/robe-hook.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Acacia-Evolution-Robe-Hook-image.jpg"
                     },
                     {
                         name: "Soap Dish",
@@ -153,7 +153,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/soap-dish.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Acacia-Evolution-Soap-Dish-image.jpg"
                     },
                     {
                         name: "Toilet Brush",
@@ -161,7 +161,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/toilet-brush.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Acacia-Evolution-Toilet-Brush-image.jpg"
                     },
                     {
                         name: "Towel Bar",
@@ -169,7 +169,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/towel-bar.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Acacia-Evolution-Towel-Bar-image.jpg"
                     },
                     {
                         name: "Towel Ring",
@@ -177,7 +177,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/towel-ring.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Acacia-Evolution-Towel-Ring-image.jpg"
                     },
                     {
                         name: "Towel Shelf",
@@ -185,60 +185,7 @@ export const americanProducts: BrandProductGroup[] = [
                         brands: ["American Standard"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/towel-shelf.jpg"
-                    }
-                ]
-            },
-            {
-                category: "Bath & Showers",
-                items: [
-                    {
-                        name: "Acacia Evolution Bath & Shower Mixer FFBS1301-XYZ",
-                        material: "Chrome-plated Brass",
-                        brands: ["American Standard"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/AcaciaEvolutionBathShowersMixer.jpg"
-                    },
-                    {
-                        name: "Kastello Bath & Shower Mixer with Pop-Up Drain FFBS1601-XYZ",
-                        material: "Chrome-plated Brass",
-                        brands: ["American Standard"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/KastelloBathShowersMixer.jpg"
-                    },
-                    {
-                        name: "Concept Square Bath & Shower Mixer FFBS0401-XYZ",
-                        material: "Chrome-plated Brass",
-                        brands: ["American Standard"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/ConceptSquareBathShowersMixer.jpg"
-                    },
-                    {
-                        name: "Cygnet Bath & Shower Mixer (w/o Pop-Up) FFBS0301-XYZ",
-                        material: "Chrome-plated Brass",
-                        brands: ["American Standard"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/CygnetBathShowersMixer.jpg"
-                    },
-                    {
-                        name: "Cygnet Extended Bath & Shower Mixer (w/o Pop-Up) FFBS0303-XYZ",
-                        material: "Chrome-plated Brass",
-                        brands: ["American Standard"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/CygnetExtendedBathShowersMixer.jpg"
-                    },
-                    {
-                        name: "Compact Codie Bath & Shower Mixer FFBSB201-XYZ",
-                        material: "Chrome-plated Brass",
-                        brands: ["American Standard"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://www.americanstandard.in/media/images/CompactCodieBathShowersMixer.jpg"
+                        imageUrl: "https://prod-rebuild-assets.americanstandard-apac.com/in/Acacia-Evolution-Towel-Shelf-image.jpg"
                     }
                 ]
             }

@@ -23,28 +23,28 @@ export const groheProducts: BrandProductGroup[] = [
                 category: "Grohe Atrio 2018 Tapware Collection",
                 items: [
                     {
-                        name: "Grohe Atrio 2018 Single-Lever Mixer",
+                        name: "Grohe Atrio 2018 Three-Hole Basin Mixer",
                         material: "Chrome-plated Brass",
                         brands: ["Grohe"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.grohe.co.in/media/image/atrio-2018-single-lever.jpg" // placeholder URL; update with actual path if available
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/20/20/20643000/1280/20643000_1_1.jpg" // placeholder URL; update with actual path if available
                     },
                     {
-                        name: "Grohe Atrio 2018 Dual-Lever Mixer",
+                        name: "Grohe Atrio 2018 Concealed Valve Exposed Part",
                         material: "Chrome-plated Brass",
                         brands: ["Grohe"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.grohe.co.in/media/image/atrio-2018-dual-lever.jpg" // placeholder URL; update with actual path if available
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/20/29/29397GN0/1280/29397GN0_1_1.jpg" // placeholder URL; update with actual path if available
                     },
                     {
-                        name: "Grohe Atrio 2018 Basin Mixer",
+                        name: "Grohe Atrio 2018 Single-lever mixer with 2-way diverter",
                         material: "Chrome-plated Brass",
                         brands: ["Grohe"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.grohe.co.in/media/image/atrio-2018-basin-mixer.jpg" // placeholder URL; update with actual path if available
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/20/24/24355DA0/1280/24355DA0_1_1.jpg" // placeholder URL; update with actual path if available
                     }
                 ]
             },
@@ -52,28 +52,28 @@ export const groheProducts: BrandProductGroup[] = [
                 category: "Grohe Grandera Mixer Taps",
                 items: [
                     {
-                        name: "Grohe Grandera Single-Hole Mixer Tap",
+                        name: "Grohe Grandera Three-hole basin mixer",
                         material: "Chrome-plated Brass",
                         brands: ["Grohe"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.grohe.co.in/media/image/Grandera-Single-Hole.jpg" // Update with actual image URL
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/20/20/20622IG0/1280/20622IG0_1_1.jpg" // Update with actual image URL
                     },
                     {
-                        name: "Grohe Grandera Centre Set Mixer Tap",
+                        name: "Grohe Grandera Single-lever basin mixer",
                         material: "Chrome-plated Brass",
                         brands: ["Grohe"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.grohe.co.in/media/image/Grandera-Centre-Set.jpg" // Update with actual image URL
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/20/24/24369000/1280/24369000_1_1.jpg" // Update with actual image URL
                     },
                     {
-                        name: "Grohe Grandera Basin Mixer Tap",
+                        name: "Grohe Grandera Shower outlet elbow",
                         material: "Chrome-plated Brass",
                         brands: ["Grohe"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.grohe.co.in/media/image/Grandera-Basin.jpg" // Update with actual image URL
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/20/26/26897DA0/1280/26897DA0_1_1.jpg" // Update with actual image URL
                     }
                 ]
             },
@@ -81,28 +81,28 @@ export const groheProducts: BrandProductGroup[] = [
                 category: "Grohe Allure Brilliant Mixer Taps",
                 items: [
                     {
-                        name: "Grohe Allure Brilliant Single-Hole Mixer Tap",
+                        name: "Grohe Allure Brilliant Three-hole basin mixer",
                         material: "Chrome-plated Brass",
                         brands: ["Grohe"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.grohe.co.in/media/image/Allure-Brilliant-Single-Hole.jpg" // Update with actual URL if different
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/20/20/20626AL0/1280/20626AL0_1_1.jpg" // Update with actual URL if different
                     },
                     {
-                        name: "Grohe Allure Brilliant Centre Set Mixer Tap",
+                        name: "Grohe Allure Brilliant Wall hand shower holder",
                         material: "Chrome-plated Brass",
                         brands: ["Grohe"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.grohe.co.in/media/image/Allure-Brilliant-Centre-Set.jpg" // Update with actual URL if different
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/20/26/26847DC0/1280/26847DC0_1_1.jpg" // Update with actual URL if different
                     },
                     {
-                        name: "Grohe Allure Brilliant Basin Mixer Tap",
+                        name: "Grohe Allure Brilliant Shower outlet elbow",
                         material: "Chrome-plated Brass",
                         brands: ["Grohe"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.grohe.co.in/media/image/Allure-Brilliant-Basin.jpg" // Update with actual URL if different
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/20/26/26850DC0/1280/26850DC0_1_1.jpg" // Update with actual URL if different
                     }
                 ]
             },
@@ -110,28 +110,28 @@ export const groheProducts: BrandProductGroup[] = [
                 category: "Grohe Sensor Taps",
                 items: [
                     {
-                        name: "Grohe Sensia Sensor Tap",
-                        material: "Chrome-plated Brass",
+                        name: "Grohe Sensia Bau Cosmopolitan E Infra-red electronic basin mixer",
+                        material: "Chrome-plated",
                         brands: ["Grohe"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.grohe.co.in/media/image/sensia-sensor-tap.jpg" // Replace with the actual image URL
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/30/36/36451000/1280/36451000_1_1.jpg" // Replace with the actual image URL
                     },
                     {
-                        name: "Grohe Sense Guard Sensor Tap",
-                        material: "Chrome-plated Brass",
+                        name: "Grohe Sense Euroeco Cosmopolitan E Infra-red electronic basin tap without mixing device",
+                        material: "Chrome-plated",
                         brands: ["Grohe"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.grohe.co.in/media/image/sense-guard-sensor-tap.jpg" // Replace with the actual image URL
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/30/36/36269000/1280/36269000_1_1.jpg" // Replace with the actual image URL
                     },
                     {
-                        name: "Grohe Touchless Sensor Tap",
-                        material: "Chrome-plated Brass",
+                        name: "Grohe Touchless Eurocube E Infra-red electronic basin mixer ",
+                        material: "Chrome-plated",
                         brands: ["Grohe"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.grohe.co.in/media/image/touchless-sensor-tap.jpg" // Replace with the actual image URL
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/30/36/36441000/1280/36441000_1_1.jpg" // Replace with the actual image URL
                     }
                 ]
             },
@@ -144,23 +144,23 @@ export const groheProducts: BrandProductGroup[] = [
                         brands: ["Grohe"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.grohe.co.in/media/image/plus-single-lever-basin-mixer.jpg" // update with actual URL if available
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/20/23/23844003/1280/23844003_1_1.jpg" // update with actual URL if available
                     },
                     {
-                        name: "Grohe Plus Centre Set Basin Mixer",
+                        name: "Grohe Plus Three-hole single-lever bath combination",
                         material: "Chrome-plated Brass",
                         brands: ["Grohe"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.grohe.co.in/media/image/plus-centre-set-basin-mixer.jpg" // update with actual URL if available
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/20/23/23845003/1280/23845003_1_1.jpg" // update with actual URL if available
                     },
                     {
-                        name: "Grohe Plus Dual-Lever Basin Mixer",
+                        name: "Grohe Plus Bath spout",
                         material: "Chrome-plated Brass",
                         brands: ["Grohe"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.grohe.co.in/media/image/plus-dual-lever-basin-mixer.jpg" // update with actual URL if available
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/10/13/13404003/1280/13404003_1_1.jpg" // update with actual URL if available
                     }
                 ]
             }

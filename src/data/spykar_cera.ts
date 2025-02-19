@@ -23,65 +23,66 @@ export const spykarceraProducts: BrandProductGroup[] = [
                 category: "Pedestal Wash Basins",
                 items: [
                     {
-                        name: "Spykar Cera Pedestal Wash Basin Model A",
+                        name: "One Piece Wash Basin",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/p/e/pedestal_wash_basin_model_a.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/07266208/b/4/One-Piece-Wash-Basin.jpg"
                     },
                     {
-                        name: "Spykar Cera Pedestal Wash Basin Model B",
+                        name: "Spice wash basin 19",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/p/e/pedestal_wash_basin_model_b.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/03132017/b/5/Spice-wash-basin-19.jpg"
                     },
                     {
-                        name: "Spykar Cera Pedestal Wash Basin Model C",
+                        name: "Plain Pedestal Wash Basin 22",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/p/e/pedestal_wash_basin_model_c.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02710300/b/6/Plain-Pedestal-Wash-Basin-22.jpg"
                     },
                     {
-                        name: "Spykar Cera Pedestal Wash Basin Model D",
+                        name: "Eva Pedestal Wash Basins 23",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/p/e/pedestal_wash_basin_model_d.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02710302/b/6/Eva-Pedestal-Wash-Basins-23.jpg"
                     }
+                    // Add additional products if available...
                 ]
             },
             {
                 category: "Printed Pedestal Wash Basins",
                 items: [
                     {
-                        name: "Spykar Cera Printed Pedestal Wash Basin - Model 1",
+                        name: "PRINTED SERENA WASH BASIN WITH PEDESTAL SET",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/p/r/printed_wash_basin_model_1.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/06593733/b/4/PRINTED-SERENA-WASH-BASIN-WITH-PEDESTAL-SET.jpg"
                     },
                     {
-                        name: "Spykar Cera Printed Pedestal Wash Basin - Model 2",
+                        name: "Small Hand Washing Basin",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/p/r/printed_wash_basin_model_2.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02710330/b/6/Small-Hand-Washing-Basin.jpg"
                     },
                     {
-                        name: "Spykar Cera Printed Pedestal Wash Basin - Model 3",
+                        name: "Round Pedestal Wash Basin",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/p/r/printed_wash_basin_model_3.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02710338/b/6/Round-Pedestal-Wash-Basin.jpg"
                     }
                 ]
             },
@@ -89,36 +90,36 @@ export const spykarceraProducts: BrandProductGroup[] = [
                 category: "Colored Pedestal Wash Basins",
                 items: [
                     {
-                        name: "Spykar Cera Colored Pedestal Wash Basin - Blue",
+                        name: "Bathroom wash basin",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/c/o/colored_wash_basin_blue.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/03131922/b/5/Bathroom-wash-basin.jpg"
                     },
                     {
-                        name: "Spykar Cera Colored Pedestal Wash Basin - Green",
+                        name: "Sanitary ware wash basin",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/c/o/colored_wash_basin_green.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/03131916/b/5/Sanitary-ware-wash-basin.jpg"
                     },
                     {
-                        name: "Spykar Cera Colored Pedestal Wash Basin - Red",
+                        name: "Big sterling wash basin",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/c/o/colored_wash_basin_red.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/03131919/b/5/Big-sterling-wash-basin.jpg"
                     },
                     {
-                        name: "Spykar Cera Colored Pedestal Wash Basin - Yellow",
+                        name: "Polo Set Designer Colored Wash Basin",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/c/o/colored_wash_basin_yellow.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02711977/b/6/Polo-Set-Designer-Colored-Wash-Basin.jpg"
                     }
                     // If the page contains more items, add them here following the same format.
                 ]
@@ -127,68 +128,68 @@ export const spykarceraProducts: BrandProductGroup[] = [
                 category: "Wash Basins",
                 items: [
                     {
-                        name: "Spykar Cera Contemporary Wash Basin - White",
+                        name: "Corner Wash Basin 18",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/c/o/cont_white.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712006/b/4/Corner-Wash-Basin-18.jpg"
                     },
                     {
-                        name: "Spykar Cera Contemporary Wash Basin - Black",
+                        name: "Classic Wash Basin 18",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/c/o/cont_black.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02711998/b/4/Classic-Wash-Basin-18.jpg"
                     },
                     {
-                        name: "Spykar Cera Designer Wash Basin - Marble",
+                        name: "Classic Flora Wash Basin 12",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/d/e/designer_marble.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02711999/b/4/Classic-Flora-Wash-Basin-12.jpg"
                     },
                     {
-                        name: "Spykar Cera Minimalist Wash Basin - Grey",
+                        name: "Taiwan Wash Basin 20",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/m/i/minimalist_grey.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712009/b/4/Taiwan-Wash-Basin-20.jpg"
                     },
                     {
-                        name: "Spykar Cera Premium Wash Basin - Glossy White",
+                        name: "Designer Hand Wash Basin 18",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/p/r/premium_glossy_white.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712004/b/4/Designer-Hand-Wash-Basin-18.jpg"
                     },
                     {
-                        name: "Spykar Cera Fusion Wash Basin - Blue",
+                        name: "Classic Colored Basin 18",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/f/u/fusion_blue.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712007/b/5/Classic-Colored-Basin-18.jpg"
                     },
                     {
-                        name: "Spykar Cera Artistic Wash Basin - Red",
+                        name: "Classic Sobber Wash Basin 14",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/a/r/artistic_red.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712000/b/4/Classic-Sobber-Wash-Basin-14.jpg"
                     },
                     {
-                        name: "Spykar Cera Eco Wash Basin - Green",
+                        name: "Ceramic Wash Basin",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/e/c/eco_green.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02628404/b/4/Ceramic-Wash-Basin.jpg"
                     }
                 ]
             },
@@ -196,52 +197,52 @@ export const spykarceraProducts: BrandProductGroup[] = [
                 category: "Water Closets",
                 items: [
                     {
-                        name: "Spykar Cera Modern Water Closet",
+                        name: "Stylish One Piece Water Closet",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/m/o/modern_wc.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712045/b/5/Stylish-One-Piece-Water-Closet.jpg"
                     },
                     {
-                        name: "Spykar Cera Designer Water Closet",
+                        name: "Irani S Type Water Closet",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/d/e/designer_wc.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712049/b/5/Irani-S-Type-Water-Closet.jpg"
                     },
                     {
-                        name: "Spykar Cera Minimalist Water Closet",
+                        name: "Anglo Indian P Type",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/m/i/minimalist_wc.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712057/b/5/Anglo-Indian-P-Type.jpg"
                     },
                     {
-                        name: "Spykar Cera Contemporary Water Closet",
+                        name: "Bidet Water Closet",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/c/o/contemporary_wc.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712054/b/5/Bidet-Water-Closet.jpg"
                     },
                     {
-                        name: "Spykar Cera Fusion Water Closet",
+                        name: "Indian Water Closet 20",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/f/u/fusion_wc.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712050/b/5/Indian-Water-Closet-20.jpg"
                     },
                     {
-                        name: "Spykar Cera Artistic Water Closet",
+                        name: "Water Closet Tank",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/a/r/artistic_wc.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712044/b/5/Water-Closet-tank.jpg"
                     }
                 ]
             },
@@ -249,36 +250,36 @@ export const spykarceraProducts: BrandProductGroup[] = [
                 category: "Toilet Seats",
                 items: [
                     {
-                        name: "Spykar Cera Toilet Seat - White",
+                        name: "Medium Deep Toilet",
                         material: "Polypropylene",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/t/o/toilet_seat_white.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712058/b/4/Medium-Deep-Toilet.jpg"
                     },
                     {
-                        name: "Spykar Cera Toilet Seat - Black",
+                        name: "C T Pan",
                         material: "Polypropylene",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/t/o/toilet_seat_black.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712059/b/4/C-T-Pan.jpg"
                     },
                     {
-                        name: "Spykar Cera Toilet Seat - Soft Close",
+                        name: "Ceramic Toilet",
                         material: "Polypropylene",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/t/o/toilet_seat_softclose.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712060/b/4/Ceramic-Toilet.jpg"
                     },
                     {
-                        name: "Spykar Cera Toilet Seat - Designer",
+                        name: "White Orissa Pan",
                         material: "Polypropylene",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/t/o/toilet_seat_designer.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02628414/b/4/White-Orissa-Pan.jpg"
                     }
                 ]
             },
@@ -286,28 +287,28 @@ export const spykarceraProducts: BrandProductGroup[] = [
                 category: "Designer Urinals",
                 items: [
                     {
-                        name: "Spykar Cera Designer Urinal - Model 1",
+                        name: "Ladies Urinal",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/d/e/designer_urinal_model1.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712063/b/5/Ladies-Urinal.jpg"
                     },
                     {
-                        name: "Spykar Cera Designer Urinal - Model 2",
+                        name: "Half Stall Urinal2",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/d/e/designer_urinal_model2.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712064/b/4/Half-Stall-Urinal.jpg"
                     },
                     {
-                        name: "Spykar Cera Designer Urinal - Model 3",
+                        name: "Gents Urinal",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/d/e/designer_urinal_model3.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712065/b/5/Gents-Urinal.jpg"
                     }
                 ]
             },
@@ -315,52 +316,36 @@ export const spykarceraProducts: BrandProductGroup[] = [
                 category: "Sanitary Ware Accessories",
                 items: [
                     {
-                        name: "Spykar Cera Soap Dish",
+                        name: "Ceramic Channel",
                         material: "Ceramic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/s/o/soap_dish.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712076/b/5/Ceramic-Channel.jpg"
                     },
                     {
-                        name: "Spykar Cera Towel Ring",
+                        name: "Ceramic Foot Rest",
                         material: "Stainless Steel",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/t/o/towel_ring.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712075/b/5/Ceramic-Foot-Rest.jpg"
                     },
                     {
-                        name: "Spykar Cera Towel Bar",
+                        name: "Sanitary Ware Accessories",
                         material: "Stainless Steel",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/t/o/towel_bar.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712067/b/4/Sanitary-Ware-Accessories.jpg"
                     },
                     {
-                        name: "Spykar Cera Toilet Brush",
+                        name: "Ceramic Soap Dish",
                         material: "Plastic",
                         brands: ["Spykar Cera"],
                         variants: 1,
                         price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/t/o/toilet_brush.jpg"
-                    },
-                    {
-                        name: "Spykar Cera Robe Hook",
-                        material: "Stainless Steel",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/r/o/robe_hook.jpg"
-                    },
-                    {
-                        name: "Spykar Cera Paper Holder",
-                        material: "Stainless Steel",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://www.spykarcera.com/media/catalog/product/p/a/paper_holder.jpg"
+                        imageUrl: "https://cpimg.tistatic.com/02712073/b/5/Ceramic-Soap-Dish.jpg"
                     }
                 ]
             }
