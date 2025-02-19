@@ -1,7 +1,6 @@
 // ProductsWeOffer.tsx
 import { Button } from "@/components/ui/button";
 import {
-    Anchor,
     ArrowRight,
     Bolt,
     Box,
@@ -14,6 +13,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { JSX } from "react";
+import CustomQuoteDialog from "../custom-quote";
 
 type ProductCategory = {
     category: string;
@@ -234,12 +234,7 @@ export const ProductsWeOffer = () => {
                                     Download Full Catalog (PDF)
                                 </Link>
                             </Button>
-                            <Button variant="outline" size="lg" className="rounded-full px-8 gap-2" asChild>
-                                <Link href="/contact">
-                                    <Anchor className="w-5 h-5" />
-                                    Request Custom Quote
-                                </Link>
-                            </Button>
+                            <CustomQuoteDialog />
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 // TestimonialsSection.tsx
 import { Button } from "@/components/ui/button"
 import { Quote, User, Building2, Handshake, BadgeCheck } from "lucide-react"
+import Link from "next/link"
 
 const testimonials = [
     {
@@ -24,8 +25,8 @@ const testimonials = [
 ]
 
 const trustBadges = [
-    { value: "25+", label: "Years Experience" },
-    { icon: Building2, label: "500+ Enterprise Clients" },
+    { value: "21+", label: "Years Experience" },
+    { icon: Building2, label: "500+ Enterprises" },
     { icon: Handshake, label: "50+ Industry Partners" },
 ]
 
@@ -86,10 +87,12 @@ export const TestimonialsSection = () => {
 
                 {/* CTA */}
                 <div className="mt-16 text-center">
-                    <Button size="lg" className="rounded-full gap-2">
-                        <User className="w-5 h-5" />
-                        Join Our Satisfied Clients
-                    </Button>
+                    <Link href={'/clients-anish-enterprises'}>
+                        <Button size="lg" className="rounded-full gap-2">
+                            <User className="w-5 h-5" />
+                            Join Our Satisfied Clients
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </section>

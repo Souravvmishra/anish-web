@@ -1,6 +1,7 @@
 // AboutSection.tsx
 import { Button } from "@/components/ui/button"
 import { Factory, Trophy, Users, ShieldCheck, Clock, TowerControl } from "lucide-react"
+import Link from "next/link"
 
 export const AboutSection = () => {
     return (
@@ -50,7 +51,7 @@ export const AboutSection = () => {
 
                         <div className="grid grid-cols-2 gap-4 mt-8">
                             <div className="p-4 border rounded-lg bg-muted/20">
-                                <div className="text-2xl font-bold text-primary">25+</div>
+                                <div className="text-2xl font-bold text-primary">21+</div>
                                 <div className="text-sm text-muted-foreground">Years Operation</div>
                             </div>
                             <div className="p-4 border rounded-lg bg-muted/20">
@@ -100,10 +101,12 @@ export const AboutSection = () => {
 
                 {/* CTA */}
                 <div className="mt-16 text-center">
-                    <Button size="lg" className="rounded-full gap-2">
-                        <Factory className="w-5 h-5" />
-                        Explore Our Solutions
-                    </Button>
+                    <Link href={'/products-we-deal'}>
+                        <Button size="lg" className="rounded-full gap-2">
+                            <Factory className="w-5 h-5" />
+                            Explore Our Solutions
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </section>

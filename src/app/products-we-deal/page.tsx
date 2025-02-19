@@ -198,8 +198,8 @@ const ProductsPage = () => {
     };
 
     return (
-        <div className="bg-background min-h-screen">
-            <main className="px-4 py-4 sm:py-8 container mx-auto">
+        <div className="bg-background min-h-screen ">
+            <main className="px-4 py-4 sm:py-8 container mx-auto max-w-7xl">
                 <div className="hidden sm:block">
                     <Breadcrumbs items={breadcrumbItems} />
                 </div>

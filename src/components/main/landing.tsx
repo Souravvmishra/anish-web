@@ -10,6 +10,7 @@ import sendEmail from "@/actions/send-email"
 import { Label } from "../ui/label"
 import { Input } from "../ui/input"
 import { useToast } from "@/hooks/use-toast"
+import Link from "next/link"
 
 const EmailForm = () => {
     const [email, setEmail] = useState('')
@@ -114,7 +115,7 @@ export const LandingPage = () => {
                     </h1>
 
                     <p className="mt-6 text-lg text-muted-foreground">
-                        Authorized distributors of world-class industrial tools and machinery with 25+ years of technical expertise
+                        Authorized distributors of world-class industrial tools and machinery with 21+ years of technical expertise
                     </p>
 
                     <div className="flex flex-col gap-4 mt-10 sm:flex-row sm:justify-center">
@@ -127,20 +128,22 @@ export const LandingPage = () => {
                             </DialogTrigger>
                             <EmailForm />
                         </Dialog>
-                        <Button variant="outline" size="lg" className="rounded-full px-8 gap-2">
-                            <Play className="w-5 h-5" />
-                            Facility Tour
-                        </Button>
+                        <Link href={'/products-we-deal'}>
+                            <Button variant="outline" size="lg" className="rounded-full px-8 gap-2">
+                                <Play className="w-5 h-5" />
+                                Facility Tour
+                            </Button>
+                        </Link>
                     </div>
 
                     <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3">
                         <div className="p-4 border rounded-lg bg-muted/20">
-                            <div className="text-2xl font-bold text-primary">25+</div>
+                            <div className="text-2xl font-bold text-primary">21+</div>
                             <div className="text-sm text-muted-foreground">Years Experience</div>
                         </div>
                         <div className="p-4 border rounded-lg bg-muted/20">
                             <div className="text-2xl font-bold text-primary">500+</div>
-                            <div className="text-sm text-muted-foreground">Enterprise</div>
+                            <div className="text-sm text-muted-foreground">Enterprises</div>
                         </div>
                         <div className="p-4 border rounded-lg bg-muted/20">
                             <div className="text-2xl font-bold text-primary">100+</div>
