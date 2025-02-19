@@ -17,7 +17,7 @@ const testimonials = [
         icon: Building2,
     },
     {
-        quote: "For 17+ years, Anish Enterprises has provided us with premium quality pipes and fittings. Their technical support team is always ready with innovative solutions.",
+        quote: "For 21+ years, Anish Enterprises has provided us with premium quality pipes and fittings. Their technical support team is always ready with innovative solutions.",
         author: "Omkar Industries",
         role: "Manufacturing Unit",
         icon: BadgeCheck,
