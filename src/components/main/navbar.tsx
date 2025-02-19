@@ -6,10 +6,13 @@ import { useScrollTrigger } from '@/hooks/useScrollTrigger'
 import { Menu, Phone } from "lucide-react"
 import Link from 'next/link'
 import { usePathname } from "next/navigation"
+import { useState } from 'react'
 
 export const Navbar = () => {
     const isScrolled = useScrollTrigger(50)
-    const currentPath = usePathname();
+    const currentPath = usePathname()
+    const [isOpen, setIsOpen] = useState(false)
+
     const navItems = [
         { name: 'About', href: '/about-anish-enterprises' },
         { name: 'Products', href: '/products-we-deal' },
@@ -22,7 +25,7 @@ export const Navbar = () => {
     return (
         <header className={`fixed w-full top-0 z-50 bg-background/80 backdrop-blur-md border-b transition-all duration-300 ${isScrolled ? 'py-3 shadow-sm' : 'py-6'} ${isScrolled ? 'border-border/50' : 'border-transparent'}`}>
             <div className="container px-4 mx-auto">
-                <div className="flex items-center justify-between gap-4 ">
+                <div className="flex items-center justify-between gap-4">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
                         <img
@@ -64,7 +67,7 @@ export const Navbar = () => {
                     </div>
 
                     {/* Mobile Navigation */}
-                    <Sheet>
+                    <Sheet open={isOpen} onOpenChange={setIsOpen}>
                         <SheetTrigger asChild className="lg:hidden">
                             <Button variant="ghost" size="icon" className="text-foreground">
                                 <Menu className="h-6 w-6" />
@@ -82,6 +85,7 @@ export const Navbar = () => {
                                         <Link
                                             key={item.name}
                                             href={item.href}
+                                            onClick={() => setIsOpen(false)}
                                             className="px-4 py-2 rounded-md hover:bg-accent transition-colors text-foreground"
                                         >
                                             {item.name}
@@ -90,12 +94,12 @@ export const Navbar = () => {
                                 </nav>
 
                                 <div className="flex flex-col gap-2 mt-4">
-                                    <Link href="/login">
+                                    <Link href="/login" onClick={() => setIsOpen(false)}>
                                         <Button variant="outline" className="w-full">
                                             Customer Login
                                         </Button>
                                     </Link>
-                                    <Link href="/signup">
+                                    <Link href="/signup" onClick={() => setIsOpen(false)}>
                                         <Button className="w-full">
                                             Sign up
                                         </Button>
@@ -109,3 +113,5 @@ export const Navbar = () => {
         </header>
     )
 }
+
+export default Navbar

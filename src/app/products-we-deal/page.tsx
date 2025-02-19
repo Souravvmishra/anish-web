@@ -47,18 +47,12 @@ const cardVariants = {
     visible: {
         opacity: 1,
         y: 0,
-        transition: {
-            duration: 0.4,
-            ease: "easeOut"
-        }
+        transition: { duration: 0.4, ease: "easeOut" }
     },
     hover: {
         y: -5,
         scale: 1.02,
-        transition: {
-            duration: 0.2,
-            ease: "easeInOut"
-        }
+        transition: { duration: 0.2, ease: "easeInOut" }
     },
     tap: { scale: 0.98 }
 };
@@ -66,10 +60,7 @@ const cardVariants = {
 const imageVariants = {
     hover: {
         scale: 1.05,
-        transition: {
-            duration: 0.3,
-            ease: "easeInOut"
-        }
+        transition: { duration: 0.3, ease: "easeInOut" }
     }
 };
 
@@ -80,15 +71,15 @@ const BrandCard = ({ brand, onSelect }: { brand: string; onSelect: () => void })
         animate="visible"
         whileHover="hover"
         whileTap="tap"
-        className="h-full"
+        className="w-full"
         onClick={onSelect}
     >
-        <Card className="h-full relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10">
-            <CardContent className="p-6">
-                <CardTitle className="text-2xl font-bold text-primary">
+        <Card className="relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10">
+            <CardContent className="p-4 sm:p-6">
+                <CardTitle className="text-xl sm:text-2xl font-bold text-primary">
                     {brand}
                 </CardTitle>
-                <div className="h-1 w-16 bg-primary/20 mt-4 group-hover:bg-primary transition-colors" />
+                <div className="h-1 w-16 bg-primary/20 mt-3 group-hover:bg-primary transition-colors" />
             </CardContent>
         </Card>
     </motion.div>
@@ -101,15 +92,15 @@ const CategoryCard = ({ category, onSelect }: { category: string; onSelect: () =
         animate="visible"
         whileHover="hover"
         whileTap="tap"
-        className="h-full"
+        className="w-full"
         onClick={onSelect}
     >
-        <Card className="h-full relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10">
-            <CardContent className="p-6">
-                <CardTitle className="text-xl font-bold text-primary">
+        <Card className="relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10">
+            <CardContent className="p-4 sm:p-6">
+                <CardTitle className="text-lg sm:text-xl font-bold text-primary">
                     {category}
                 </CardTitle>
-                <div className="h-1 w-16 bg-primary/20 mt-4 group-hover:bg-primary transition-colors" />
+                <div className="h-1 w-16 bg-primary/20 mt-3 group-hover:bg-primary transition-colors" />
             </CardContent>
         </Card>
     </motion.div>
@@ -122,10 +113,10 @@ const ProductCard = ({ product }: { product: Product }) => (
         animate="visible"
         whileHover="hover"
         whileTap="tap"
-        className="h-full"
+        className="w-full"
     >
-        <Card className="h-full relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10">
-            <div className="relative h-48 overflow-hidden">
+        <Card className="relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10">
+            <div className="relative h-40 sm:h-48 overflow-hidden">
                 <motion.div variants={imageVariants} className="absolute inset-0">
                     <img
                         src={product.imageUrl}
@@ -136,23 +127,23 @@ const ProductCard = ({ product }: { product: Product }) => (
                 </motion.div>
             </div>
 
-            <CardContent className="p-6">
-                <CardTitle className="text-xl font-bold mb-3 text-primary">
+            <CardContent className="p-4 sm:p-6">
+                <CardTitle className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-primary">
                     {product.name}
                 </CardTitle>
 
-                <div className="space-y-3 mb-4">
+                <div className="space-y-2 sm:space-y-3 mb-3 sm:mb-4">
                     <div className="flex items-center gap-2 text-sm">
                         <span className="font-medium">Material:</span>
                         <span className="text-muted-foreground">{product.material}</span>
                     </div>
 
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-1.5 sm:gap-2">
                         {product.brands.map((brand, i) => (
                             <motion.div
                                 key={i}
                                 whileHover={{ scale: 1.05 }}
-                                className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full backdrop-blur-sm"
+                                className="px-2 sm:px-3 py-0.5 sm:py-1 text-xs font-medium bg-primary/10 text-primary rounded-full backdrop-blur-sm"
                             >
                                 {brand}
                             </motion.div>
@@ -167,7 +158,7 @@ const ProductCard = ({ product }: { product: Product }) => (
 
                 <Button
                     variant="outline"
-                    className="w-full bg-transparent hover:bg-primary/10 border-primary/20 hover:border-primary/30 font-semibold relative overflow-hidden"
+                    className="w-full bg-transparent hover:bg-primary/10 border-primary/20 hover:border-primary/30 font-semibold relative overflow-hidden text-sm sm:text-base"
                 >
                     <span className="relative z-10">Explore Options</span>
                     <motion.div
@@ -189,7 +180,6 @@ const ProductsPage = () => {
 
     // Get unique brands
     const uniqueBrands = [...new Set(allProductGroups.map(group => group.brand))];
-
     const selectedBrandGroup = allProductGroups.find(group => group.brand === selectedBrand);
 
     const breadcrumbItems = [
@@ -209,25 +199,26 @@ const ProductsPage = () => {
 
     return (
         <div className="bg-background min-h-screen">
-            <main className="container max-w-7xl mx-auto px-4 py-8">
-                <Breadcrumbs items={breadcrumbItems} />
+            <main className="px-4 py-4 sm:py-8 container mx-auto">
+                <div className="hidden sm:block">
+                    <Breadcrumbs items={breadcrumbItems} />
+                </div>
 
-                {(selectedBrand || selectedCategory) && (
-                    <Button
-                        variant="ghost"
-                        onClick={handleBack}
-                        className="mb-6"
-                    >
-                        <ChevronLeft className="w-4 h-4" /> Back
-                    </Button>
-                )}
-
-                <div className="flex items-center justify-between mb-8">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                    {(selectedBrand || selectedCategory) && (
+                        <Button
+                            variant="ghost"
+                            onClick={handleBack}
+                            className="w-fit -ml-3"
+                        >
+                            <ChevronLeft className="w-4 h-4" /> Back
+                        </Button>
+                    )}
 
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl font-bold "
+                        className="text-2xl sm:text-3xl md:text-4xl font-bold"
                     >
                         {!selectedBrand
                             ? "Our Brand Partners"
@@ -238,14 +229,14 @@ const ProductsPage = () => {
                     </motion.h1>
 
                     {selectedCategory && (
-                        <div className="relative">
+                        <div className="relative w-full sm:w-auto">
                             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
                             <input
                                 type="text"
                                 placeholder="Search products..."
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
-                                className="pl-10 pr-10 py-2 rounded-full bg-muted/50 border border-muted-foreground/20 focus:outline-none focus:ring-2 focus:ring-primary/20"
+                                className="w-full sm:w-auto pl-10 pr-10 py-2 rounded-full bg-muted/50 border border-muted-foreground/20 focus:outline-none focus:ring-2 focus:ring-primary/20"
                             />
                             {searchQuery && (
                                 <button
@@ -259,7 +250,7 @@ const ProductsPage = () => {
                     )}
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
                     {!selectedBrand && uniqueBrands.map((brand, index) => (
                         <BrandCard
                             key={index}

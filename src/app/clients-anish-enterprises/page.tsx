@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/main/contact-form";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Breadcrumbs } from "@/components/breadcrumbs";
-import { Search, Users2 } from "lucide-react";
+import { Dot, Search, Users2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { clientCategories } from "@/data/clients";
@@ -30,10 +30,11 @@ const ClientCard: React.FC<ClientCardProps> = ({ name, index, category }) => {
             className="w-full"
         >
             <Card className="relative group cursor-pointer overflow-hidden">
-                <CardContent className="p-6">
-                    <div className="flex items-start justify-between gap-4">
-                        <div className="space-y-2">
-                            <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
+                <CardContent className="p-3">
+                    <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                            <Dot/>
+                            <h3 className="text-sm font-medium group-hover:text-primary transition-colors">
                                 {name}
                             </h3>
                             <Badge variant="secondary" className="text-xs">
@@ -43,7 +44,7 @@ const ClientCard: React.FC<ClientCardProps> = ({ name, index, category }) => {
                         <Button
                             variant="ghost"
                             size="icon"
-                            className="opacity-0 group-hover:opacity-100 transition-opacity"
+                            className="h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity"
                         >
                             <Users2 className="w-4 h-4" />
                         </Button>
