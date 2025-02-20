@@ -80,9 +80,9 @@ export const Footer = () => {
                             <div className="flex items-center gap-2">
                                 <Phone className="w-4 h-4 text-primary" />
                                 <div className="">
-                                    <Link href="tel:+9170335598001">
+                                    <Link href="tel:+917033598001">
                                         <Button variant="link" className="px-0 text-muted-foreground">
-                                            +91 70335 598001
+                                            +91 70335 98001
                                         </Button>
                                     </Link>
                                 </div>

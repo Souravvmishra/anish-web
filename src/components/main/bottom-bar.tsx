@@ -22,10 +22,10 @@ export const BottomBar = () => {
                         <div className="flex items-center gap-1 text-foreground">
                             <Phone className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                             <a
-                                href="tel:+9170335598001"
+                                href="tel:+917033598001"
                                 className="transition-colors hover:text-muted-foreground"
                             >
-                                +91 70335 598001
+                                +91 70335 98001
                             </a>
                         </div>
 
