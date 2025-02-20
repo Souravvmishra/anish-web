@@ -1,23 +1,9 @@
-export interface Product {
-    name: string;
-    material: string;
-    brands: string[];
-    variants: number;
-    price: string;
-    imageUrl: string;
-}
-
-export interface BrandProductGroup {
-    brand: string;
-    categories: {
-        category: string;
-        items: Product[];
-    }[];
-}
+import { BrandProductGroup } from "./products";
 
 export const americanProducts: BrandProductGroup[] = [
     {
         brand: "American Standard",
+        logo: 'https://prod-rebuild-assets.americanstandard-apac.com/th/AS_logo.png',
         categories: [
             {
                 category: "Basin Faucets",

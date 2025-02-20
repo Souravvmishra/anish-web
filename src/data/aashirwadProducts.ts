@@ -1,23 +1,9 @@
-export interface Product {
-    name: string;
-    material: string;
-    brands: string[];
-    variants: number;
-    price: string;
-    imageUrl: string;
-}
-
-export interface BrandProductGroup {
-    brand: string;
-    categories: {
-        category: string;
-        items: Product[];
-    }[];
-}
+import { BrandProductGroup } from "./products";
 
 export const ashirvadProducts: BrandProductGroup[] = [
     {
         brand: "Ashirvad",
+        logo :  "https://www.ashirvad.com/wp-content/themes/ashirvad/assets/main/svgs/ashirvad-logo.svg",
         categories: [
             {
                 category: "Plumbing Pipes and Fittings",

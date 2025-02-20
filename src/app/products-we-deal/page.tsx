@@ -14,24 +14,8 @@ import { americanProducts } from "@/data/american_standard";
 import { spykarceraProducts } from "@/data/spykar_cera";
 import { finolexUtkarshProducts } from '@/data/finolex';
 import { ashirvadProducts } from '@/data/aashirwadProducts';
+import { BrandProductGroup, Product } from "@/data/products";
 
-// Types
-interface Product {
-    name: string;
-    material: string;
-    brands: string[];
-    variants: number;
-    price: string;
-    imageUrl: string;
-}
-
-interface BrandProductGroup {
-    brand: string;
-    categories: {
-        category: string;
-        items: Product[];
-    }[];
-}
 
 // Combine all product groups
 const allProductGroups: BrandProductGroup[] = [
@@ -64,7 +48,15 @@ const imageVariants = {
     }
 };
 
-const BrandCard = ({ brand, onSelect }: { brand: string; onSelect: () => void }) => (
+const BrandCard = ({
+    brand,
+    imageUrl,
+    onSelect
+}: {
+    brand: string;
+    imageUrl: string;
+    onSelect: () => void;
+}) => (
     <motion.div
         variants={cardVariants}
         initial="hidden"
@@ -75,11 +67,19 @@ const BrandCard = ({ brand, onSelect }: { brand: string; onSelect: () => void })
         onClick={onSelect}
     >
         <Card className="relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10">
+            <div className="relative h-48 overflow-hidden">
+                <img
+                    src={imageUrl}
+                    alt={`${brand} brand`}
+                    className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300" />
+            </div>
             <CardContent className="p-4 sm:p-6">
-                <CardTitle className="text-xl sm:text-2xl font-bold text-primary">
+                <CardTitle className="text-xl sm:text-2xl font-bold">
                     {brand}
                 </CardTitle>
-                <div className="h-1 w-16 bg-primary/20 mt-3 group-hover:bg-primary transition-colors" />
+                <div className="h-1 w-16 bg-primary/20 mt-3 group-hover:bg-primary transition-colors duration-300" />
             </CardContent>
         </Card>
     </motion.div>
@@ -179,7 +179,7 @@ const ProductsPage = () => {
     const [searchQuery, setSearchQuery] = useState("");
 
     // Get unique brands
-    const uniqueBrands = [...new Set(allProductGroups.map(group => group.brand))];
+    const uniqueBrands = [...new Set(allProductGroups.map(group => ({brand: group.brand, image : group.logo})))];
     const selectedBrandGroup = allProductGroups.find(group => group.brand === selectedBrand);
 
     const breadcrumbItems = [
@@ -254,8 +254,9 @@ const ProductsPage = () => {
                     {!selectedBrand && uniqueBrands.map((brand, index) => (
                         <BrandCard
                             key={index}
-                            brand={brand}
-                            onSelect={() => setSelectedBrand(brand)}
+                            brand={brand.brand}
+                            imageUrl={brand.image}
+                            onSelect={() => setSelectedBrand(brand.brand)}
                         />
                     ))}
 

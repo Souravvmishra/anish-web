@@ -9,6 +9,7 @@ export interface Product {
 
 export interface BrandProductGroup {
     brand: string;
+    logo : string;
     categories: {
         category: string;
         items: Product[];
@@ -18,6 +19,7 @@ export interface BrandProductGroup {
 export const hindwareProducts: BrandProductGroup[] = [
     {
         brand: "Hindware",
+        logo: "https://www.anishenterprises.in/wp-content/uploads/2018/08/Hindware.jpg",
         categories: [
             {
                 category: "Water Closets",

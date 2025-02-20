@@ -1,14 +1,12 @@
-// ProductsWeOffer.tsx
 import { Button } from "@/components/ui/button";
 import {
     ArrowRight,
-    Bolt,
-    Box,
-    BriefcaseConveyorBelt,
-    Forklift,
+    Droplet,
+    ShowerHead,
+    CircuitBoard,
     Gauge,
     PackageSearch,
-    Warehouse,
+    Bath,
     Wrench
 } from "lucide-react";
 import Link from "next/link";
@@ -33,106 +31,152 @@ type ProductCategory = {
 export const ProductsWeOffer = () => {
     const productCategories: ProductCategory[] = [
         {
-            category: "Material Handling",
-            icon: <BriefcaseConveyorBelt className="w-6 h-6 text-primary" />,
-            link: "/material-handling",
-            subcategories: [
-                {
-                    name: "Conveying Systems",
-                    products: [
-                        {
-                            id: "mh-01",
-                            name: "Roller Conveyors",
-                            description: "Heavy-duty gravity rollers up to 2000kg capacity",
-                            link: "/products/mh-01"
-                        },
-                        {
-                            id: "mh-02",
-                            name: "Chain Conveyors",
-                            description: "Drag chain systems for pallet handling",
-                            link: "/products/mh-02"
-                        },
-                        {
-                            id: "mh-03",
-                            name: "Belt Conveyors",
-                            description: "Rubber/PU belts up to 30m length",
-                            link: "/products/mh-03"
-                        }
-                    ]
-                },
-                {
-                    name: "Lifting Equipment",
-                    products: [
-                        {
-                            id: "mh-04",
-                            name: "Electric Chain Hoists",
-                            description: "1-10 ton capacity, IP54 rated",
-                            link: "/products/mh-04"
-                        },
-                        {
-                            id: "mh-05",
-                            name: "Wire Rope Hoists",
-                            description: "5-50 ton lifting capacity",
-                            link: "/products/mh-05"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            category: "Storage Solutions",
-            icon: <Warehouse className="w-6 h-6 text-primary" />,
-            link: "/storage-solutions",
-            subcategories: [
-                {
-                    name: "Racking Systems",
-                    products: [
-                        {
-                            id: "ss-01",
-                            name: "Selective Pallet Racks",
-                            description: "Hot-dip galvanized, 5-15 ton/upright",
-                            link: "/products/ss-01"
-                        },
-                        {
-                            id: "ss-02",
-                            name: "Drive-in Racking",
-                            description: "High-density storage systems",
-                            link: "/products/ss-02"
-                        }
-                    ]
-                },
-                {
-                    name: "Shelving",
-                    products: [
-                        {
-                            id: "ss-03",
-                            name: "Cantilever Shelving",
-                            description: "For long item storage up to 6m",
-                            link: "/products/ss-03"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            category: "Industrial Tools",
+            category: "Pipes and Fittings",
             icon: <Wrench className="w-6 h-6 text-primary" />,
-            link: "/industrial-tools",
+            link: "/products-we-deal",
             subcategories: [
                 {
-                    name: "Power Tools",
+                    name: "PVC Pipes",
                     products: [
                         {
-                            id: "it-01",
-                            name: "Impact Wrenches",
-                            description: "1/2 drive, 750-1500Nm torque",
-              link: "/products/it-01"
-            },
+                            id: "pf-01",
+                            name: "UPVC Pressure Pipes",
+                            description: "Schedule 40 & 80, Size: 15mm to 150mm",
+                            link: "/products/pf-01"
+                        },
                         {
-                            id: "it-02",
-                            name: "Hydraulic Cutters",
-                            description: "25-ton cutting capacity",
-                            link: "/products/it-02"
+                            id: "pf-02",
+                            name: "CPVC Pipes",
+                            description: "Hot & cold water systems, CTS size",
+                            link: "/products/pf-02"
+                        }
+                    ]
+                },
+                {
+                    name: "Pipe Fittings",
+                    products: [
+                        {
+                            id: "pf-03",
+                            name: "PVC Fittings",
+                            description: "Elbows, Tees, Couplings, and Adapters",
+                            link: "/products/pf-03"
+                        },
+                        {
+                            id: "pf-04",
+                            name: "Metal Fittings",
+                            description: "Brass and Steel connections",
+                            link: "/products/pf-04"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            category: "Bathroom Solutions",
+            icon: <Bath className="w-6 h-6 text-primary" />,
+            link: "/products-we-deal",
+            subcategories: [
+                {
+                    name: "Faucets & Sanitary",
+                    products: [
+                        {
+                            id: "bs-01",
+                            name: "Premium Faucets",
+                            description: "Single-lever, Wall-mounted options",
+                            link: "/products/bs-01"
+                        },
+                        {
+                            id: "bs-02",
+                            name: "Sanitary Ware",
+                            description: "WCs, Wash Basins, Urinals",
+                            link: "/products/bs-02"
+                        }
+                    ]
+                },
+                {
+                    name: "Accessories",
+                    products: [
+                        {
+                            id: "bs-03",
+                            name: "Bathroom Accessories",
+                            description: "Towel rails, Soap dishes, Paper holders",
+                            link: "/products/bs-03"
+                        },
+                        {
+                            id: "bs-04",
+                            name: "Shower Systems",
+                            description: "Overhead showers, Hand showers",
+                            link: "/products/bs-04"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            category: "Home Appliances",
+            icon: <ShowerHead className="w-6 h-6 text-primary" />,
+            link: "/products-we-deal",
+            subcategories: [
+                {
+                    name: "Water Heaters",
+                    products: [
+                        {
+                            id: "ha-01",
+                            name: "Storage Water Heaters",
+                            description: "15L to 50L capacity, 5-star rated",
+                            link: "/products/ha-01"
+                        },
+                        {
+                            id: "ha-02",
+                            name: "Instant Water Heaters",
+                            description: "3kW to 6kW power rating",
+                            link: "/products/ha-02"
+                        }
+                    ]
+                },
+                {
+                    name: "Kitchen Equipment",
+                    products: [
+                        {
+                            id: "ha-03",
+                            name: "Kitchen Chimneys",
+                            description: "60-90cm width, Auto-clean feature",
+                            link: "/products/ha-03"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            category: "Motors & Pumps",
+            icon: <CircuitBoard className="w-6 h-6 text-primary" />,
+            link: "/products-we-deal",
+            subcategories: [
+                {
+                    name: "Water Pumps",
+                    products: [
+                        {
+                            id: "mp-01",
+                            name: "Submersible Pumps",
+                            description: "0.5HP to 2HP, Single & 3-phase",
+                            link: "/products/mp-01"
+                        },
+                        {
+                            id: "mp-02",
+                            name: "Booster Pumps",
+                            description: "Automatic pressure control systems",
+                            link: "/products/mp-02"
+                        }
+                    ]
+                },
+                {
+                    name: "Motors",
+                    products: [
+                        {
+                            id: "mp-03",
+                            name: "Electric Motors",
+                            description: "High-efficiency IE3 motors",
+                            link: "/products/mp-03"
                         }
                     ]
                 }
@@ -145,8 +189,8 @@ export const ProductsWeOffer = () => {
             <div className="container px-4 mx-auto">
                 <div className="max-w-3xl mx-auto text-center">
                     <div className="inline-flex items-center gap-2 px-6 py-2 text-sm border rounded-full text-muted-foreground bg-muted">
-                        <PackageSearch className="w-4 h-4 text-primary" />
-                        Industrial Equipment Catalog
+                        <Droplet className="w-4 h-4 text-primary" />
+                        Plumbing Solutions Catalog
                     </div>
 
                     <h2 className="mt-8 text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
@@ -159,7 +203,7 @@ export const ProductsWeOffer = () => {
                 </div>
 
                 {/* Products Grid */}
-                <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
                     {productCategories.map((category) => (
                         <div
                             key={category.category}
@@ -174,7 +218,7 @@ export const ProductsWeOffer = () => {
                                 {category.subcategories.map((subcategory) => (
                                     <div key={subcategory.name} className="border-t pt-4">
                                         <div className="flex items-center gap-2 text-muted-foreground mb-3">
-                                            <Forklift className="w-4 h-4 text-primary" />
+                                            <PackageSearch className="w-4 h-4 text-primary" />
                                             <h4 className="font-medium">{subcategory.name}</h4>
                                         </div>
 
@@ -186,7 +230,7 @@ export const ProductsWeOffer = () => {
                                                         className="flex items-center gap-3 p-2 -m-2 rounded-lg hover:bg-muted/30 transition-colors"
                                                     >
                                                         <div className="flex-shrink-0">
-                                                            <Bolt className="w-5 h-5 text-primary/80" />
+                                                            <Droplet className="w-5 h-5 text-primary/80" />
                                                         </div>
                                                         <div>
                                                             <div className="font-medium">{product.name}</div>
@@ -208,7 +252,7 @@ export const ProductsWeOffer = () => {
                                 asChild
                             >
                                 <Link href={category.link}>
-                                    <Box className="w-4 h-4" />
+                                    <Gauge className="w-4 h-4" />
                                     View All {category.category}
                                     <ArrowRight className="w-4 h-4" />
                                 </Link>
@@ -221,16 +265,16 @@ export const ProductsWeOffer = () => {
                 <div className="mt-20 text-center border-t pt-16">
                     <div className="max-w-2xl mx-auto">
                         <h3 className="text-2xl font-semibold">
-                            Complete Industrial Solutions Catalog
+                            Complete Plumbing Solutions Catalog
                         </h3>
                         <p className="mt-4 text-muted-foreground">
-                            Access 500+ industrial products with technical specifications and CAD drawings
+                            Access our full range of plumbing products with technical specifications
                         </p>
 
                         <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
                             <Button size="lg" className="rounded-full px-8 gap-2" asChild>
                                 <Link href="/products">
-                                    <Gauge className="w-5 h-5" />
+                                    <Droplet className="w-5 h-5" />
                                     Download Full Catalog (PDF)
                                 </Link>
                             </Button>
@@ -242,6 +286,5 @@ export const ProductsWeOffer = () => {
         </section>
     );
 };
-
 
 export default ProductsWeOffer;

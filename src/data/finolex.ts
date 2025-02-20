@@ -1,23 +1,9 @@
-export interface Product {
-    name: string;
-    material: string;
-    brands: string[];
-    variants: number;
-    price: string;
-    imageUrl: string;
-}
-
-export interface BrandProductGroup {
-    brand: string;
-    categories: {
-        category: string;
-        items: Product[];
-    }[];
-}
+import { BrandProductGroup } from "./products";
 
 export const finolexUtkarshProducts: BrandProductGroup[] = [
     {
         brand: "Finolex",
+        logo: 'https://www.finolex.com/images/Finolex_logo_header.svg',
         categories: [
             {
                 category: "Agriculture Pipes & Fittings",
@@ -105,6 +91,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
     },
     {
         brand: "Utkarsh",
+        logo: 'https://utkarshindia.in/images/webp/logo.webp',
         categories: [
             {
                 category: "Pipes & Fittings",
@@ -171,6 +158,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
     },
     {
         brand: "Ajay Pipes",
+        logo: 'https://ajaypipes.com/wp-content/uploads/2023/12/FINAL-LOGO-WITH-SHADE-BLUE-1.png',
         categories: [
             {
                 category: "Plumbing Solutions",

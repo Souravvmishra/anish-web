@@ -1,23 +1,9 @@
-export interface Product {
-    name: string;
-    material: string;
-    brands: string[];
-    variants: number;
-    price: string;
-    imageUrl: string;
-}
-
-export interface BrandProductGroup {
-    brand: string;
-    categories: {
-        category: string;
-        items: Product[];
-    }[];
-}
+import { BrandProductGroup } from "./products";
 
 export const spykarceraProducts: BrandProductGroup[] = [
     {
         brand: "Spykar Cera",
+        logo: 'https://cpimg.tistatic.com//71238/1/template_photo_1.jpg',
         categories: [
             {
                 category: "Pedestal Wash Basins",

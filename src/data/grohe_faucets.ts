@@ -1,23 +1,9 @@
-export interface Product {
-    name: string;
-    material: string;
-    brands: string[];
-    variants: number;
-    price: string;
-    imageUrl: string;
-}
-
-export interface BrandProductGroup {
-    brand: string;
-    categories: {
-        category: string;
-        items: Product[];
-    }[];
-}
+import { BrandProductGroup } from "./products";
 
 export const groheProducts: BrandProductGroup[] = [
     {
         brand: "Grohe",
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Grohe.svg/1280px-Grohe.svg.png',
         categories: [
             {
                 category: "Grohe Atrio 2018 Tapware Collection",
