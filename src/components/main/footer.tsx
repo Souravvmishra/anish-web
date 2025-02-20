@@ -70,17 +70,21 @@ export const Footer = () => {
                             <div className="flex items-center gap-2">
                                 <Phone className="w-4 h-4 text-primary" />
                                 <div className="gap-2">
-                                    <Button variant="link" className=" px-0 text-muted-foreground">
-                                        +91 65122 83633
-                                    </Button>
+                                    <Link href={'tel:+916512283633'}>
+                                        <Button variant="link" className=" px-0 text-muted-foreground">
+                                            +91 65122 83633
+                                        </Button>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="flex items-center gap-2">
                                 <Phone className="w-4 h-4 text-primary" />
                                 <div className="">
-                                    <Button variant="link" className="px-0 text-muted-foreground">
-                                        +91 65122 83633
-                                    </Button>
+                                    <Link href="tel:+9170335598001">
+                                        <Button variant="link" className="px-0 text-muted-foreground">
+                                            +91 70335 598001
+                                        </Button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

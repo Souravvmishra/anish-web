@@ -1,16 +1,16 @@
 "use client"
 
 // LandingPage.tsx
+import sendEmail from "@/actions/send-email"
 import { Button } from "@/components/ui/button"
-import { Play, Award, ShieldCheck, Factory, PackageCheck, Users, Loader2, MailCheck } from "lucide-react"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
+import { useToast } from "@/hooks/use-toast"
+import { Award, Building2, Leaf, Loader2, MailCheck, PackageCheck, Play, Users } from "lucide-react"
+import Link from "next/link"
 import { useState } from "react"
 import { useFormStatus } from "react-dom"
-import sendEmail from "@/actions/send-email"
-import { Label } from "../ui/label"
 import { Input } from "../ui/input"
-import { useToast } from "@/hooks/use-toast"
-import Link from "next/link"
+import { Label } from "../ui/label"
 
 const EmailForm = () => {
     const [email, setEmail] = useState('')
@@ -174,26 +174,24 @@ export const LandingPage = () => {
 
                 <div className="mt-24 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="p-6 border rounded-xl bg-muted/10">
-                        <Factory className="w-8 h-8 text-primary" />
-                        <h3 className="mt-4 text-lg font-semibold">Material Handling Solutions</h3>
+                        <Building2 className="w-8 h-8 text-primary" />
+                        <h3 className="mt-4 text-lg font-semibold">Real Estate Development</h3>
                         <p className="mt-2 text-sm text-muted-foreground">
-                            Comprehensive range of industrial trolleys, racks, and storage systems
+                            Expert architectural design and development solutions for major real estate projects
                         </p>
                     </div>
-
                     <div className="p-6 border rounded-xl bg-muted/10">
-                        <ShieldCheck className="w-8 h-8 text-primary" />
-                        <h3 className="mt-4 text-lg font-semibold">Quality Assurance</h3>
+                        <Leaf className="w-8 h-8 text-primary" />
+                        <h3 className="mt-4 text-lg font-semibold">Sustainable Design</h3>
                         <p className="mt-2 text-sm text-muted-foreground">
-                            Rigorous quality control processes and certified manufacturing standards
+                            Environmentally conscious development practices and sustainable enterprise solutions
                         </p>
                     </div>
-
                     <div className="p-6 border rounded-xl bg-muted/10">
                         <Users className="w-8 h-8 text-primary" />
-                        <h3 className="mt-4 text-lg font-semibold">Client-Centric Service</h3>
+                        <h3 className="mt-4 text-lg font-semibold">Client-Focused Architecture</h3>
                         <p className="mt-2 text-sm text-muted-foreground">
-                            Custom solutions and dedicated technical support for enterprise needs
+                            Collaborative architectural services tailored to client vision and requirements
                         </p>
                     </div>
                 </div>
