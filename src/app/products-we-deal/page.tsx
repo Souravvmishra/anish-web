@@ -14,16 +14,17 @@ import { americanProducts } from "@/data/american_standard";
 import { spykarceraProducts } from "@/data/spykar_cera";
 import { finolexUtkarshProducts } from '@/data/finolex';
 import { ashirvadProducts } from '@/data/aashirwadProducts';
-import { BrandProductGroup, Product } from "@/data/products";
+import { BrandProductGroup, Product, hindwareProducts } from "@/data/products";
 
 
 // Combine all product groups
 const allProductGroups: BrandProductGroup[] = [
+    ...hindwareProducts,
     ...groheProducts,
     ...americanProducts,
     ...spykarceraProducts,
     ...finolexUtkarshProducts,
-    ...ashirvadProducts
+    ...ashirvadProducts,
 ];
 
 const cardVariants = {
