@@ -9,7 +9,7 @@ export interface Product {
 
 export interface BrandProductGroup {
     brand: string;
-    logo : string;
+    logo: string;
     categories: {
         category: string;
         items: Product[];
@@ -30,7 +30,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹20,000",
-                        imageUrl: "https://hindware.com/path/to/element-plus-star-white.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2021/06/EWC-Element-White-Matte-567x517.png"
                     },
                     {
                         name: "Mariana Edge",
@@ -38,7 +38,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹20,500",
-                        imageUrl: "https://hindware.com/path/to/mariana-edge.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2024/10/92637-Mariana-Edge-567x517.png"
                     },
                     {
                         name: "Prima",
@@ -46,7 +46,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 2,
                         price: "₹9,990",
-                        imageUrl: "https://hindware.com/path/to/prima.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2024/10/92655-567x517.jpg"
                     },
                     {
                         name: "Starc",
@@ -54,7 +54,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹17,900",
-                        imageUrl: "https://hindware.com/path/to/starc.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2024/09/92648-567x517.jpg"
                     },
                     {
                         name: "Stellar",
@@ -62,7 +62,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹16,990",
-                        imageUrl: "https://hindware.com/path/to/stellar.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2024/09/92633-567x517.jpg"
                     },
                     {
                         name: "Agnese Neo",
@@ -70,7 +70,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 2,
                         price: "₹17,990",
-                        imageUrl: "https://hindware.com/path/to/agnese-neo.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2024/09/92563-567x517.jpg"
                     },
                     {
                         name: "Ace Washdown",
@@ -78,7 +78,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹9,500",
-                        imageUrl: "https://hindware.com/path/to/ace-washdown.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2024/09/92638-567x517.jpg"
                     }
                 ]
             },
@@ -91,7 +91,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 2,
                         price: "₹3,990 - ₹4,990",
-                        imageUrl: "https://hindware.com/path/to/eclipse.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2024/10/91235-567x517.jpg"
                     },
                     {
                         name: "Fabio",
@@ -99,7 +99,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹2,790",
-                        imageUrl: "https://hindware.com/path/to/fabio.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2024/09/10129-567x517.jpg"
                     },
                     {
                         name: "Prima",
@@ -107,7 +107,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹1,590",
-                        imageUrl: "https://hindware.com/path/to/prima-washbasin.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2024/09/10128-567x517.jpg"
                     },
                     {
                         name: "Rene",
@@ -115,7 +115,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹6,500",
-                        imageUrl: "https://hindware.com/path/to/rene.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2024/09/91244-567x517.jpg"
                     },
                     {
                         name: "Cascade",
@@ -123,7 +123,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹25,990",
-                        imageUrl: "https://hindware.com/path/to/cascade.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2024/09/91234-CASCADE-BASIN-567x517.png"
                     },
                     {
                         name: "Armada",
@@ -131,7 +131,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹1,750",
-                        imageUrl: "https://hindware.com/path/to/armada.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2024/09/10130-567x517.jpg"
                     },
                     {
                         name: "Ascent",
@@ -139,7 +139,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹1,190",
-                        imageUrl: "https://hindware.com/path/to/ascent.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2024/09/91245-567x517.jpg"
                     },
                     {
                         name: "Athens",
@@ -147,7 +147,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹3,990",
-                        imageUrl: "https://hindware.com/path/to/athens.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2024/09/91240-567x517.jpg"
                     }
                 ]
             },
@@ -391,7 +391,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹27,390",
-                        imageUrl: "https://hindware.com/wp-content/uploads/2023/03/strauss-bathtub.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2021/04/Webp.net-resizeimage-1-567x517.jpg"
                     },
                     {
                         name: "Hindware Marina Bathtub",
@@ -399,7 +399,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹14,460",
-                        imageUrl: "https://hindware.com/wp-content/uploads/2023/03/marina-bathtub.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2021/03/Webp.net-resizeimage-1-2-567x517.jpg"
                     },
                     {
                         name: "Trendy Bathtub",
@@ -407,7 +407,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹15,590",
-                        imageUrl: "https://hindware.com/wp-content/uploads/2023/03/trendy-bathtub.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2021/03/Webp.net-resizeimage-2-2-567x517.jpg"
                     },
                     {
                         name: "Vantage (N) Bathtub",
@@ -415,7 +415,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹39,950",
-                        imageUrl: "https://hindware.com/wp-content/uploads/2023/03/vantage-bathtub.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2021/03/Webp.net-resizeimage-3-1-567x517.jpg"
                     },
                     {
                         name: "Marina Plus Bathtub",
@@ -423,7 +423,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹14,960",
-                        imageUrl: "https://hindware.com/wp-content/uploads/2023/03/marina-plus-bathtub.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2021/03/Webp.net-resizeimage-1-567x517.jpg"
                     },
                     {
                         name: "Trendy Plus Bathtub",
@@ -431,7 +431,7 @@ export const hindwareProducts: BrandProductGroup[] = [
                         brands: ["Hindware"],
                         variants: 1,
                         price: "₹16,210",
-                        imageUrl: "https://hindware.com/wp-content/uploads/2023/03/trendy-plus-bathtub.jpg"
+                        imageUrl: "https://hindware.com/wp-content/uploads/2021/03/Webp.net-resizeimage-567x517.jpg"
                     }
                 ]
             }

@@ -22,7 +22,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Finolex"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.finolexpipes.com/product/casing-pipes.jpg"
+                        imageUrl: "https://www.finolexpipes.com/site/assets/files/1136/casing_pipe_new.png"
                     },
                     {
                         name: "Column Pipes",
@@ -30,7 +30,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Finolex"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.finolexpipes.com/product/column-pipes.jpg"
+                        imageUrl: "https://www.finolexpipes.com/site/assets/files/1137/column_pipes_new.png"
                     },
                     {
                         name: "Solvent Cement & Lubricant",
@@ -38,7 +38,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Finolex"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.finolexpipes.com/product/solvent-cement-lubricant.jpg"
+                        imageUrl: "https://www.finolexpipes.com/site/assets/files/1152/pvc_solvent_cement_lubricant_for_agricultural_pipes.png"
                     }
                 ]
             },
@@ -51,7 +51,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Finolex"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.finolexpipes.com/product/astm-pipes-fittings.jpg"
+                        imageUrl: "https://www.finolexpipes.com/site/assets/files/147709/piping-fitting-new1.png"
                     },
                     {
                         name: "CPVC Pipes & Fittings",
@@ -59,7 +59,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Finolex"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.finolexpipes.com/product/cpvc-pipes-fittings.jpg"
+                        imageUrl: "https://www.finolexpipes.com/site/assets/files/147710/piping-products2.png"
                     },
                     {
                         name: "SWR Pipes & Fittings",
@@ -67,7 +67,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Finolex"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.finolexpipes.com/product/swr-pipes-fittings.jpg"
+                        imageUrl: "https://www.finolexpipes.com/site/assets/files/147711/piping-products3.png"
                     },
                     {
                         name: "Sewerage Pipes",
@@ -75,7 +75,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Finolex"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.finolexpipes.com/product/sewerage-pipes.jpg"
+                        imageUrl: "https://www.finolexpipes.com/site/assets/files/147712/piping-product4.png"
                     },
                     {
                         name: "Solvent Cement, Lubricant & Primer",
@@ -83,7 +83,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Finolex"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.finolexpipes.com/product/solvent-cement-lubricant-primer.jpg"
+                        imageUrl: "https://www.finolexpipes.com/site/assets/files/147713/revised_group_shot_solvent_1-2_1.jpg"
                     }
                 ]
             }
@@ -102,7 +102,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Utkarsh"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://utkarshindia.in/products/pipes"
+                        imageUrl: "https://utkarshindia.in/images/pipes-lp/UPVC.webp"
                     },
                     {
                         name: "CPVC Pipes & Fittings",
@@ -110,7 +110,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Utkarsh"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://utkarshindia.in/products/pipes"
+                        imageUrl: "https://utkarshindia.in/images/pipes-lp/CPVC.webp"
                     },
                     {
                         name: "SWR Pipes & Fittings",
@@ -118,7 +118,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Utkarsh"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://utkarshindia.in/products/pipes"
+                        imageUrl: "https://utkarshindia.in/images/pipes-lp/SWR.webp"
                     },
                     {
                         name: "PVC Casing Pipes",
@@ -126,7 +126,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Utkarsh"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://utkarshindia.in/products/pipes"
+                        imageUrl: "https://utkarshindia.in/images/pipes-lp/PVC.webp"
                     },
                     {
                         name: "Column Riser Pipes",
@@ -134,7 +134,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Utkarsh"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://utkarshindia.in/products/pipes"
+                        imageUrl: "https://utkarshindia.in/images/pipes-lp/Column.webp"
                     },
                     {
                         name: "Grey Agricultural Pipes",
@@ -142,7 +142,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Utkarsh"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://utkarshindia.in/products/pipes"
+                        imageUrl: "https://utkarshindia.in/images/pipes-lp/Grey.webp"
                     },
                     {
                         name: "PVC Water Tank",
@@ -150,7 +150,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Utkarsh"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://utkarshindia.in/products/pipes"
+                        imageUrl: "https://utkarshindia.in/images/pipes-lp/Water.webp"
                     }
                 ]
             }
@@ -169,7 +169,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Ajay Pipes"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://ajaypipes.com/ajay-flowline-plus-cpvc-pipes-and-fittings/"
+                        imageUrl: "https://ajaypipes.com/wp-content/uploads/2024/01/flowline-product.jpg"
                     },
                     {
                         name: "Greenline (UPVC)",
@@ -177,7 +177,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Ajay Pipes"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://ajaypipes.com/plumbing-supply/"
+                        imageUrl: "https://ajaypipes.com/wp-content/uploads/2024/01/greenline-product.jpg"
                     }
                 ]
             },
@@ -190,7 +190,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Ajay Pipes"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://ajaypipes.com/products/"
+                        imageUrl: "https://ajaypipes.com/wp-content/uploads/2024/01/drainline-product.jpg"
                     },
                     {
                         name: "Terraline (UDS)",
@@ -198,7 +198,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Ajay Pipes"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://ajaypipes.com/products/"
+                        imageUrl: "https://ajaypipes.com/wp-content/uploads/2024/01/teraaline-product.jpg"
                     }
                 ]
             },
@@ -211,7 +211,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Ajay Pipes"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://ajaypipes.com/agriline/"
+                        imageUrl: "https://ajaypipes.com/wp-content/uploads/2024/01/agreline-product.jpg"
                     }
                 ]
             },
@@ -224,7 +224,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Ajay Pipes"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://ajaypipes.com/products/"
+                        imageUrl: "https://ajaypipes.com/wp-content/uploads/2024/01/column-pipes.png"
                     },
                     {
                         name: "Deepline - Casing Pipes",
@@ -232,7 +232,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
                         brands: ["Ajay Pipes"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://ajaypipes.com/products/"
+                        imageUrl: "https://ajaypipes.com/wp-content/uploads/2024/01/drainline-product-1.jpg"
                     }
                 ]
             }

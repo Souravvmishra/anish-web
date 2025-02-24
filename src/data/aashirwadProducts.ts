@@ -14,7 +14,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/flowguard-plus-cpvc/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2021/04/CPVC_FlowGuard-Plus_Cluster-1.png"
                     },
                     {
                         name: "uPVC Aqualife+ Plumbing System",
@@ -22,7 +22,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/upvc-aqualife-plus-plumbing-system/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2024/09/Aqualife-Plus_Cluster_v1.png"
                     },
                     {
                         name: "SWR Plumbing System",
@@ -30,7 +30,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/swr-plumbing-system/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2021/04/SWR-Cluster.png"
                     }
                 ]
             },
@@ -43,7 +43,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/column-pipes/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2023/04/Column-Pipe-Cluster_v1-1.png"
                     },
                     {
                         name: "Casing Pipes",
@@ -51,7 +51,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/casing-pipes/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2021/04/Blue-Casing_v1.png"
                     },
                     {
                         name: "Agri Pipes",
@@ -59,7 +59,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/agri-pipes/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2021/04/AGRI-Pipe-Cluster_V1-1.png"
                     }
                 ]
             },
@@ -72,7 +72,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/upvc-korrosafe-pipes-and-fittings/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2021/04/Industrial-Pipe-Image_new.png"
                     },
                     {
                         name: "Electrofusion Fittings",
@@ -80,7 +80,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/electrofusion-fittings/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2021/04/Electrofusion_fittings.png"
                     }
                 ]
             },
@@ -93,7 +93,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/blazemaster/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2021/04/BlazeMaster-Pipe-Image-1.png"
                     }
                 ]
             },
@@ -106,7 +106,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/dynaflo-pvc-o-pipes/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2021/04/OPVC-Pipe-Cluster-Image_Edit.png"
                     },
                     {
                         name: "Akasison Siphonic Roof Drainage System",
@@ -114,7 +114,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/akasison-siphonic-roof-drainage-system/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2024/09/Akasison-XL-1.png"
                     }
                 ]
             },
@@ -127,7 +127,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/water-storage-tanks/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2021/04/WST_PURE_Yellow-Tank_Blue-Tape.png"
                     },
                     {
                         name: "Y-Strainer",
@@ -135,7 +135,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/y-strainer/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2021/04/Ashirvad_uPVC-Aqualife_Y-Strainer.png"
                     }
                 ]
             },
@@ -148,7 +148,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/concealed-valves-and-diverters/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2021/04/Concealed-Valve-Diverter-For-Page.png"
                     },
                     {
                         name: "WC PAN Connectors",
@@ -156,7 +156,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/wc-pan-connectors/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2021/04/12.-WC-PAN-Connectors.png"
                     },
                     {
                         name: "Ashirvad Waste Outlets & Traps",
@@ -164,7 +164,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         brands: ["Ashirvad"],
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/products/ashirvad-waste-outlets-and-traps/"
+                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2021/04/Waste-Outlet-Traps.png"
                     }
 
                 ]
