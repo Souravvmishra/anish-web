@@ -150,27 +150,62 @@ export const LandingPage = () => {
                             <div className="text-sm text-muted-foreground">Cities Presence</div>
                         </div>
                     </div>
-
                 </div>
 
-                <div className="mt-8 mb-20">
-                    <div className="rounded-xl overflow-hidden border shadow-lg aspect-video">
-                        <video
-                            className="w-full h-full object-cover"
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                        >
-                            <source src="https://videos.pexels.com/video-files/7963177/7963177-uhd_3840_2160_25fps.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
+                {/* Updated Video Section with Two Videos */}
+                <div className="mt-16 mb-20">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {/* First Video */}
+                        <div className="video-container">
+                            <div className="rounded-xl overflow-hidden border shadow-lg aspect-video relative group">
+                                <video
+                                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                >
+                                    <source src="https://videos.pexels.com/video-files/7963177/7963177-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <Button variant="secondary" size="sm" className="gap-2">
+                                        <Play className="w-4 h-4" />
+                                        Manufacturing Facility
+                                    </Button>
+                                </div>
+                            </div>
+                            <p className="mt-3 text-sm text-center text-muted-foreground">
+                                Our state-of-the-art manufacturing facility
+                            </p>
+                        </div>
+
+                        {/* Second Video */}
+                        <div className="video-container">
+                            <div className="rounded-xl overflow-hidden border shadow-lg aspect-video relative group">
+                                <video
+                                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                >
+                                    <source src="https://videos.pexels.com/video-files/7963177/7963177-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <Button variant="secondary" size="sm" className="gap-2">
+                                        <Play className="w-4 h-4" />
+                                        Equipment Showcase
+                                    </Button>
+                                </div>
+                            </div>
+                            <p className="mt-3 text-sm text-center text-muted-foreground">
+                                Explore our premium industrial equipment in action
+                            </p>
+                        </div>
                     </div>
-                    <p className="mt-4 text-sm text-center text-muted-foreground">
-                        A glimpse into our state-of-the-art manufacturing facility
-                    </p>
                 </div>
-
 
                 <div className="mt-24 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="p-6 border rounded-xl bg-muted/10">
