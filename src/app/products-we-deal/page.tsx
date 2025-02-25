@@ -16,6 +16,7 @@ import { finolexUtkarshProducts } from '@/data/finolex';
 import { ashirvadProducts } from '@/data/aashirwadProducts';
 import { BrandProductGroup, Product, hindwareProducts } from "@/data/products";
 import { SupplierAlert } from "@/components/supplier";
+import { eausetProducts } from "@/data/eaucets";
 
 
 // Combine all product groups
@@ -26,6 +27,7 @@ const allProductGroups: BrandProductGroup[] = [
     ...spykarceraProducts,
     ...finolexUtkarshProducts,
     ...ashirvadProducts,
+    ...eausetProducts
 ];
 
 const cardVariants = {
