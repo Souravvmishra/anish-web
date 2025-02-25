@@ -6,7 +6,8 @@ export const americanProducts: BrandProductGroup[] = [
         logo: 'https://prod-rebuild-assets.americanstandard-apac.com/th/AS_logo.png',
         categories: [
             {
-                category: "Basin Faucets",
+                category: "Faucets",
+                categoryImage: 'https://i.pinimg.com/736x/18/e7/94/18e794ac2bb7234188d44d892b70ba79.jpg',
                 items: [
                     {
                         name: "Kastello 3-Hole Basin Mixer with Pop-Up Drain FFAS1603-101500BF0",
@@ -107,7 +108,8 @@ export const americanProducts: BrandProductGroup[] = [
                 ]
             },
             {
-                category: "Bathroom Accessories",
+                category: "Sanitary Ware",
+                categoryImage: 'https://i.pinimg.com/736x/4d/3e/68/4d3e686b2889e742883e2e129d458e5c.jpg',
                 items: [
                     {
                         name: "Glass Holder",

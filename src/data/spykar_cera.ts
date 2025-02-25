@@ -3,10 +3,11 @@ import { BrandProductGroup } from "./products";
 export const spykarceraProducts: BrandProductGroup[] = [
     {
         brand: "Spykar Cera",
-        logo: 'https://cpimg.tistatic.com//71238/1/template_photo_1.jpg',
+        logo: '/spykarcera.jpg',
         categories: [
             {
-                category: "Pedestal Wash Basins",
+                category: "Sanitary Ware",
+                categoryImage: 'https://i.pinimg.com/736x/4d/3e/68/4d3e686b2889e742883e2e129d458e5c.jpg',
                 items: [
                     {
                         name: "One Piece Wash Basin",
@@ -39,13 +40,7 @@ export const spykarceraProducts: BrandProductGroup[] = [
                         variants: 1,
                         price: "Call for Price",
                         imageUrl: "https://cpimg.tistatic.com/02710302/b/6/Eva-Pedestal-Wash-Basins-23.jpg"
-                    }
-                    // Add additional products if available...
-                ]
-            },
-            {
-                category: "Printed Pedestal Wash Basins",
-                items: [
+                    },
                     {
                         name: "PRINTED SERENA WASH BASIN WITH PEDESTAL SET",
                         material: "Ceramic",
@@ -69,12 +64,149 @@ export const spykarceraProducts: BrandProductGroup[] = [
                         variants: 1,
                         price: "Call for Price",
                         imageUrl: "https://cpimg.tistatic.com/02710338/b/6/Round-Pedestal-Wash-Basin.jpg"
+                    },
+                    {
+                        name: "Stylish One Piece Water Closet",
+                        material: "Ceramic",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712045/b/5/Stylish-One-Piece-Water-Closet.jpg"
+                    },
+                    {
+                        name: "Irani S Type Water Closet",
+                        material: "Ceramic",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712049/b/5/Irani-S-Type-Water-Closet.jpg"
+                    },
+                    {
+                        name: "Anglo Indian P Type",
+                        material: "Ceramic",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712057/b/5/Anglo-Indian-P-Type.jpg"
+                    },
+                    {
+                        name: "Bidet Water Closet",
+                        material: "Ceramic",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712054/b/5/Bidet-Water-Closet.jpg"
+                    },
+                    {
+                        name: "Indian Water Closet 20",
+                        material: "Ceramic",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712050/b/5/Indian-Water-Closet-20.jpg"
+                    },
+                    {
+                        name: "Water Closet Tank",
+                        material: "Ceramic",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712044/b/5/Water-Closet-tank.jpg"
+                    },
+                    {
+                        name: "Medium Deep Toilet",
+                        material: "Polypropylene",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712058/b/4/Medium-Deep-Toilet.jpg"
+                    },
+                    {
+                        name: "C T Pan",
+                        material: "Polypropylene",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712059/b/4/C-T-Pan.jpg"
+                    },
+                    {
+                        name: "Ceramic Toilet",
+                        material: "Polypropylene",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712060/b/4/Ceramic-Toilet.jpg"
+                    },
+                    {
+                        name: "White Orissa Pan",
+                        material: "Polypropylene",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02628414/b/4/White-Orissa-Pan.jpg"
+                    },
+                    {
+                        name: "Ladies Urinal",
+                        material: "Ceramic",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712063/b/5/Ladies-Urinal.jpg"
+                    },
+                    {
+                        name: "Half Stall Urinal2",
+                        material: "Ceramic",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712064/b/4/Half-Stall-Urinal.jpg"
+                    },
+                    {
+                        name: "Gents Urinal",
+                        material: "Ceramic",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712065/b/5/Gents-Urinal.jpg"
                     }
                 ]
             },
             {
-                category: "Colored Pedestal Wash Basins",
+                category: "Faucets",
+                categoryImage: 'https://i.pinimg.com/736x/18/e7/94/18e794ac2bb7234188d44d892b70ba79.jpg',
                 items: [
+                    {
+                        name: "Ceramic Channel",
+                        material: "Ceramic",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712076/b/5/Ceramic-Channel.jpg"
+                    },
+                    {
+                        name: "Ceramic Foot Rest",
+                        material: "Stainless Steel",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712075/b/5/Ceramic-Foot-Rest.jpg"
+                    },
+                    {
+                        name: "Sanitary Ware Accessories",
+                        material: "Stainless Steel",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712067/b/4/Sanitary-Ware-Accessories.jpg"
+                    },
+                    {
+                        name: "Ceramic Soap Dish",
+                        material: "Plastic",
+                        brands: ["Spykar Cera"],
+                        variants: 1,
+                        price: "Call for Price",
+                        imageUrl: "https://cpimg.tistatic.com/02712073/b/5/Ceramic-Soap-Dish.jpg"
+                    },
                     {
                         name: "Bathroom wash basin",
                         material: "Ceramic",
@@ -106,13 +238,7 @@ export const spykarceraProducts: BrandProductGroup[] = [
                         variants: 1,
                         price: "Call for Price",
                         imageUrl: "https://cpimg.tistatic.com/02711977/b/6/Polo-Set-Designer-Colored-Wash-Basin.jpg"
-                    }
-                    // If the page contains more items, add them here following the same format.
-                ]
-            },
-            {
-                category: "Wash Basins",
-                items: [
+                    },
                     {
                         name: "Corner Wash Basin 18",
                         material: "Ceramic",
@@ -179,162 +305,6 @@ export const spykarceraProducts: BrandProductGroup[] = [
                     }
                 ]
             },
-            {
-                category: "Water Closets",
-                items: [
-                    {
-                        name: "Stylish One Piece Water Closet",
-                        material: "Ceramic",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712045/b/5/Stylish-One-Piece-Water-Closet.jpg"
-                    },
-                    {
-                        name: "Irani S Type Water Closet",
-                        material: "Ceramic",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712049/b/5/Irani-S-Type-Water-Closet.jpg"
-                    },
-                    {
-                        name: "Anglo Indian P Type",
-                        material: "Ceramic",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712057/b/5/Anglo-Indian-P-Type.jpg"
-                    },
-                    {
-                        name: "Bidet Water Closet",
-                        material: "Ceramic",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712054/b/5/Bidet-Water-Closet.jpg"
-                    },
-                    {
-                        name: "Indian Water Closet 20",
-                        material: "Ceramic",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712050/b/5/Indian-Water-Closet-20.jpg"
-                    },
-                    {
-                        name: "Water Closet Tank",
-                        material: "Ceramic",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712044/b/5/Water-Closet-tank.jpg"
-                    }
-                ]
-            },
-            {
-                category: "Toilet Seats",
-                items: [
-                    {
-                        name: "Medium Deep Toilet",
-                        material: "Polypropylene",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712058/b/4/Medium-Deep-Toilet.jpg"
-                    },
-                    {
-                        name: "C T Pan",
-                        material: "Polypropylene",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712059/b/4/C-T-Pan.jpg"
-                    },
-                    {
-                        name: "Ceramic Toilet",
-                        material: "Polypropylene",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712060/b/4/Ceramic-Toilet.jpg"
-                    },
-                    {
-                        name: "White Orissa Pan",
-                        material: "Polypropylene",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02628414/b/4/White-Orissa-Pan.jpg"
-                    }
-                ]
-            },
-            {
-                category: "Designer Urinals",
-                items: [
-                    {
-                        name: "Ladies Urinal",
-                        material: "Ceramic",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712063/b/5/Ladies-Urinal.jpg"
-                    },
-                    {
-                        name: "Half Stall Urinal2",
-                        material: "Ceramic",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712064/b/4/Half-Stall-Urinal.jpg"
-                    },
-                    {
-                        name: "Gents Urinal",
-                        material: "Ceramic",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712065/b/5/Gents-Urinal.jpg"
-                    }
-                ]
-            },
-            {
-                category: "Sanitary Ware Accessories",
-                items: [
-                    {
-                        name: "Ceramic Channel",
-                        material: "Ceramic",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712076/b/5/Ceramic-Channel.jpg"
-                    },
-                    {
-                        name: "Ceramic Foot Rest",
-                        material: "Stainless Steel",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712075/b/5/Ceramic-Foot-Rest.jpg"
-                    },
-                    {
-                        name: "Sanitary Ware Accessories",
-                        material: "Stainless Steel",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712067/b/4/Sanitary-Ware-Accessories.jpg"
-                    },
-                    {
-                        name: "Ceramic Soap Dish",
-                        material: "Plastic",
-                        brands: ["Spykar Cera"],
-                        variants: 1,
-                        price: "Call for Price",
-                        imageUrl: "https://cpimg.tistatic.com/02712073/b/5/Ceramic-Soap-Dish.jpg"
-                    }
-                ]
-            }
         ]
     }
 ];

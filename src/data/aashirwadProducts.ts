@@ -3,10 +3,11 @@ import { BrandProductGroup } from "./products";
 export const ashirvadProducts: BrandProductGroup[] = [
     {
         brand: "Ashirvad",
-        logo :  "https://www.ashirvad.com/wp-content/themes/ashirvad/assets/main/svgs/ashirvad-logo.svg",
+        logo: "https://www.ashirvad.com/wp-content/themes/ashirvad/assets/main/svgs/ashirvad-logo.svg",
         categories: [
             {
                 category: "Plumbing Pipes and Fittings",
+                categoryImage: 'https://i.pinimg.com/736x/1c/89/46/1c89461dc4fa24792f88d90573a842c8.jpg',
                 items: [
                     {
                         name: "FlowGuard-Plus® CPVC",
@@ -36,6 +37,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
             },
             {
                 category: "Agriculture Pipes and Fittings",
+                categoryImage: 'https://i.pinimg.com/736x/0f/b4/6e/0fb46ecb060a2df9fcc2d72095320882.jpg',
                 items: [
                     {
                         name: "Column Pipes",
@@ -65,6 +67,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
             },
             {
                 category: "Industrial Solutions",
+                categoryImage: 'https://i.pinimg.com/736x/9b/3a/62/9b3a62222af93bf41bf9efab8de8c346.jpg',
                 items: [
                     {
                         name: "uPVC Korrosafe Pipes and Fittings",
@@ -85,20 +88,8 @@ export const ashirvadProducts: BrandProductGroup[] = [
                 ]
             },
             {
-                category: "Fire Protection System",
-                items: [
-                    {
-                        name: "BlazeMaster® Fire Protection System",
-                        material: "Chlorinated Polyvinyl Chloride (CPVC)",
-                        brands: ["Ashirvad"],
-                        variants: 0, // Specific number of variants not provided
-                        price: "Contact for pricing",
-                        imageUrl: "https://www.ashirvad.com/wp-content/uploads/2021/04/BlazeMaster-Pipe-Image-1.png"
-                    }
-                ]
-            },
-            {
                 category: "Infrastructure Solutions",
+                categoryImage: 'https://i.pinimg.com/736x/b2/41/cd/b241cde795d719f5f8e3c05c5736f4d2.jpg',
                 items: [
                     {
                         name: "Dynaflo PVC-O Pipes",
@@ -120,6 +111,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
             },
             {
                 category: "Water Tanks & Y Strainer",
+                categoryImage: 'https://i.pinimg.com/736x/44/79/c3/4479c322ef83c32d8faafc8994a8bb10.jpg',
                 items: [
                     {
                         name: "Water Storage Tanks",
@@ -136,12 +128,7 @@ export const ashirvadProducts: BrandProductGroup[] = [
                         variants: 0, // Specific number of variants not provided
                         price: "Contact for pricing",
                         imageUrl: "https://www.ashirvad.com/wp-content/uploads/2021/04/Ashirvad_uPVC-Aqualife_Y-Strainer.png"
-                    }
-                ]
-            },
-            {
-                category: "Bath and Kitchen Solutions",
-                items: [
+                    },
                     {
                         name: "Concealed Valves and Diverters",
                         material: "Brass",

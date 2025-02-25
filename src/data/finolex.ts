@@ -7,6 +7,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
         categories: [
             {
                 category: "Agriculture Pipes & Fittings",
+                categoryImage: 'https://i.pinimg.com/736x/0f/b4/6e/0fb46ecb060a2df9fcc2d72095320882.jpg',
                 items: [
                     {
                         name: "Agriculture Pipes & Fittings",
@@ -44,6 +45,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
             },
             {
                 category: "Plumbing and Sanitation Pipes & Fittings",
+                categoryImage: 'https://i.pinimg.com/736x/cd/73/eb/cd73eb9b058e28fc2031b959033d1962.jpg',
                 items: [
                     {
                         name: "ASTM Pipes & Fittings",
@@ -91,7 +93,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
     },
     {
         brand: "Utkarsh",
-        logo: 'https://utkarshindia.in/images/webp/logo.webp',
+        logo: '/utkarsh.png',
         categories: [
             {
                 category: "Pipes & Fittings",
@@ -162,6 +164,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
         categories: [
             {
                 category: "Plumbing Solutions",
+                categoryImage: 'https://i.pinimg.com/736x/cd/73/eb/cd73eb9b058e28fc2031b959033d1962.jpg',
                 items: [
                     {
                         name: "Flowline Plus (CPVC)",
@@ -183,6 +186,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
             },
             {
                 category: "Drainage Solutions",
+                categoryImage: 'https://i.pinimg.com/736x/35/9f/59/359f59a19a22fb2ca5aff74c66fd3988.jpg',
                 items: [
                     {
                         name: "Drainline (SWR)",
@@ -204,6 +208,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
             },
             {
                 category: "Agricultural Solutions",
+                categoryImage: 'https://i.pinimg.com/736x/0f/b4/6e/0fb46ecb060a2df9fcc2d72095320882.jpg',
                 items: [
                     {
                         name: "Agriline",
@@ -217,6 +222,7 @@ export const finolexUtkarshProducts: BrandProductGroup[] = [
             },
             {
                 category: "Industrial Solutions",
+                categoryImage: 'https://i.pinimg.com/736x/9b/3a/62/9b3a62222af93bf41bf9efab8de8c346.jpg',
                 items: [
                     {
                         name: "Deepline - Column Pipes",

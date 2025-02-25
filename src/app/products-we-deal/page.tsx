@@ -15,6 +15,7 @@ import { spykarceraProducts } from "@/data/spykar_cera";
 import { finolexUtkarshProducts } from '@/data/finolex';
 import { ashirvadProducts } from '@/data/aashirwadProducts';
 import { BrandProductGroup, Product, hindwareProducts } from "@/data/products";
+import { SupplierAlert } from "@/components/supplier";
 
 
 // Combine all product groups
@@ -86,7 +87,7 @@ const BrandCard = ({
     </motion.div>
 );
 
-const CategoryCard = ({ category, onSelect }: { category: string; onSelect: () => void }) => (
+const CategoryCard = ({ category, imageUrl, onSelect }: { category: string; imageUrl: string; onSelect: () => void }) => (
     <motion.div
         variants={cardVariants}
         initial="hidden"
@@ -97,6 +98,14 @@ const CategoryCard = ({ category, onSelect }: { category: string; onSelect: () =
         onClick={onSelect}
     >
         <Card className="relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10">
+            <div className="relative h-48 overflow-hidden">
+                <img
+                    src={imageUrl}
+                    alt={`${category} brand`}
+                    className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300" />
+            </div>
             <CardContent className="p-4 sm:p-6">
                 <CardTitle className="text-lg sm:text-xl font-bold text-primary">
                     {category}
@@ -180,7 +189,7 @@ const ProductsPage = () => {
     const [searchQuery, setSearchQuery] = useState("");
 
     // Get unique brands
-    const uniqueBrands = [...new Set(allProductGroups.map(group => ({brand: group.brand, image : group.logo})))];
+    const uniqueBrands = [...new Set(allProductGroups.map(group => ({ brand: group.brand, image: group.logo })))];
     const selectedBrandGroup = allProductGroups.find(group => group.brand === selectedBrand);
 
     const breadcrumbItems = [
@@ -265,9 +274,12 @@ const ProductsPage = () => {
                         <CategoryCard
                             key={index}
                             category={category.category}
+                            imageUrl={category.categoryImage || 'https://i.pinimg.com/736x/1c/89/46/1c89461dc4fa24792f88d90573a842c8.jpg'}
                             onSelect={() => setSelectedCategory(category.category)}
                         />
                     ))}
+
+
 
                     {selectedBrand && selectedCategory && selectedBrandGroup?.categories
                         .find(c => c.category === selectedCategory)
@@ -282,6 +294,12 @@ const ProductsPage = () => {
                         ))
                     }
                 </div>
+
+                {selectedBrand && selectedBrandGroup?.supplier && (
+                    <div className="mt-8">
+                        <SupplierAlert supplier={selectedBrandGroup.supplier} />
+                    </div>
+                )}
 
                 {selectedCategory && <ContactForm />}
             </main>
