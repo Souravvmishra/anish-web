@@ -13,10 +13,10 @@ import { groheProducts } from "@/data/grohe_faucets";
 import { americanProducts } from "@/data/american_standard";
 import { spykarceraProducts } from "@/data/spykar_cera";
 import { finolexUtkarshProducts } from '@/data/finolex';
-import { ashirvadProducts } from '@/data/aashirwadProducts';
 import { BrandProductGroup, Product, hindwareProducts } from "@/data/products";
 import { SupplierAlert } from "@/components/supplier";
 import { eausetProducts } from "@/data/eaucets";
+import { ashirvadProducts } from "@/data/aashirwadProducts";
 
 
 // Combine all product groups

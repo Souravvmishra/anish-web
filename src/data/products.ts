@@ -12,7 +12,7 @@ export interface BrandProductGroup {
     logo: string;
     supplier?: string;
     categories: {
-        category: 'Sanitary Ware' | 'Faucets' | string;
+        category: string;
         categoryImage?: string;
         items: Product[];
     }[];
