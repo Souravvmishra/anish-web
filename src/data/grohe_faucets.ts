@@ -7,7 +7,7 @@ export const groheProducts: BrandProductGroup[] = [
         categories: [
             {
                 category: "Sanitary Ware",
-                categoryImage: 'https://i.pinimg.com/736x/4d/3e/68/4d3e686b2889e742883e2e129d458e5c.jpg',
+                categoryImage: 'https://i.pinimg.com/736x/10/af/54/10af547daebf53c79f4e910039c88e75.jpg',
                 items: [
                     {
                         name: "Grohe Atrio 2018 Three-Hole Basin Mixer",
@@ -86,7 +86,7 @@ export const groheProducts: BrandProductGroup[] = [
             },
             {
                 category: "Faucets",
-                categoryImage: 'https://i.pinimg.com/736x/18/e7/94/18e794ac2bb7234188d44d892b70ba79.jpg',
+                categoryImage: 'https://i.pinimg.com/474x/ad/b3/09/adb309aed38b410c75687620c6485be1.jpg',
                 items: [
                     {
                         name: "Grohe Sensia Bau Cosmopolitan E Infra-red electronic basin mixer",

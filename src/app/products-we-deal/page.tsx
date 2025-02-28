@@ -104,7 +104,7 @@ const CategoryCard = ({ category, imageUrl, onSelect }: { category: string; imag
                 <img
                     src={imageUrl}
                     alt={`${category} brand`}
-                    className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300" />
             </div>

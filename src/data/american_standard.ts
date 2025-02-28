@@ -109,7 +109,7 @@ export const americanProducts: BrandProductGroup[] = [
             },
             {
                 category: "Sanitary Ware",
-                categoryImage: 'https://i.pinimg.com/736x/4d/3e/68/4d3e686b2889e742883e2e129d458e5c.jpg',
+                categoryImage: 'https://i.pinimg.com/474x/fe/16/e7/fe16e7fa8dfc31341a4ac9c132bec451.jpg',
                 items: [
                     {
                         name: "Glass Holder",
