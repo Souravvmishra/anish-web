@@ -16,7 +16,6 @@ export const Navbar = () => {
     const navItems = [
         { name: 'About', href: '/about-anish-enterprises' },
         { name: 'Products', href: '/products-we-deal' },
-        { name: 'Brands', href: '/brands-we-deal' },
         { name: 'Clients', href: '/clients-anish-enterprises' },
         { name: 'Awards', href: '/awards-anish-enterprises' },
         { name: 'Contact', href: '/contact-anish-enterprises' }

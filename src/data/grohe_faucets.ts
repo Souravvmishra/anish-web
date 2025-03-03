@@ -135,6 +135,94 @@ export const groheProducts: BrandProductGroup[] = [
                         variants: 1,
                         price: "Call for Price",
                         imageUrl: "https://cdn.cloud.grohe.com/prod/20/26/26897DA0/1280/26897DA0_1_1.jpg" // Update with actual image URL
+                    },
+                    {
+                        name: "GROHE BauFlow",
+                        material: "Metal",
+                        brands: ["GROHE"],
+                        variants: 1,
+                        price: "N/A",
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/30/31/31220000/320/31220000_1_1.jpg"
+                    },
+                    {
+                        name: "GROHE BauFlow",
+                        material: "Metal",
+                        brands: ["GROHE"],
+                        variants: 1,
+                        price: "N/A",
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/30/31/31225000/320/31225000_1_1.jpg"
+                    },
+                    {
+                        name: "BauLoop",
+                        material: "Metal",
+                        brands: ["GROHE"],
+                        variants: 1,
+                        price: "N/A",
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/30/31/31227000/320/31227000_1_1.jpg"
+                    },
+                    {
+                        name: "BauLoop",
+                        material: "Metal",
+                        brands: ["GROHE"],
+                        variants: 1,
+                        price: "N/A",
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/30/31/31222000/320/31222000_1_1.jpg"
+                    },
+                    {
+                        name: "BauLoop Single-lever",
+                        material: "Metal",
+                        brands: ["GROHE"],
+                        variants: 1,
+                        price: "N/A",
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/30/31/31232000/320/31232000_1_1.jpg"
+                    },
+                    {
+                        name: "Concetto",
+                        material: "Metal",
+                        brands: ["GROHE"],
+                        variants: 1,
+                        price: "N/A",
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/30/31/31129001/320/31129001_1_1.jpg"
+                    },
+                    {
+                        name: "Concetto",
+                        material: "Metal",
+                        brands: ["GROHE"],
+                        variants: 1,
+                        price: "N/A",
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/30/32/32659001/320/32659001_1_1.jpg"
+                    },
+                    {
+                        name: "Concetto",
+                        material: "Metal",
+                        brands: ["GROHE"],
+                        variants: 1,
+                        price: "N/A",
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/30/31/31483002/320/31483002_1_1.jpg"
+                    },
+                    {
+                        name: "Concetto",
+                        material: "Metal",
+                        brands: ["GROHE"],
+                        variants: 1,
+                        price: "N/A",
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/30/31/31129DC1/320/31129DC1_1_1.jpg"
+                    },
+                    {
+                        name: "Costa L",
+                        material: "Metal",
+                        brands: ["GROHE"],
+                        variants: 1,
+                        price: "N/A",
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/30/31/31191001/320/31191001_1_1.jpg"
+                    },
+                    {
+                        name: "Costa L",
+                        material: "Metal",
+                        brands: ["GROHE"],
+                        variants: 1,
+                        price: "N/A",
+                        imageUrl: "https://cdn.cloud.grohe.com/prod/30/31/31187001/320/31187001_1_1.jpg"
                     }
                 ]
             },

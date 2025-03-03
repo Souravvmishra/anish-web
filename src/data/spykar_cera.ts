@@ -173,7 +173,7 @@ export const spykarceraProducts: BrandProductGroup[] = [
             },
             {
                 category: "Faucets",
-                categoryImage: 'https://i.pinimg.com/736x/18/e7/94/18e794ac2bb7234188d44d892b70ba79.jpg',
+                categoryImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQakbsLov6bB_u7ek7mvbxbD7wezmv73dQetw&s',
                 items: [
                     {
                         name: "Ceramic Channel",

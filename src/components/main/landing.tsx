@@ -100,21 +100,21 @@ export const LandingPage = () => {
     return (
         <section className="pb-20 bg-background">
             <div className="container px-4 mx-auto">
-                <div className="max-w-3xl mx-auto text-center">
+                <div className="max-w-4xl mx-auto text-center">
                     <div className="inline-flex items-center gap-2 px-6 py-2 text-sm border rounded-full text-muted-foreground bg-muted">
                         <Award className="w-4 h-4 text-primary" />
                         Trusted Industrial Solutions Since 2001
                     </div>
 
-                    <h1 className="mt-8 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                        Premium Material Handling & {" "}
+                    <h1 className="mt-8 text-4xl font-bold tracking-tight sm:text-6xl ">
+                        Premium Sanitary Ware, Faucets and {' '}
                         <span className="relative inline-block">
-                            <span className="absolute inset-0 bg-gradient-to-r from-primary/30 via-secondary/30 to-accent/30 blur-xl opacity-50" />
-                            <span className="relative">Industrial Equipment</span>
+                            <span className="absolute inset-0 bg-gradient-to-r from-primary/80 via-secondary/80 to-accent/80 blur-xl opacity-50" />
+                            <span className="relative">Plumbing Solutions</span>
                         </span>
                     </h1>
 
-                    <p className="mt-6 text-lg text-muted-foreground">
+                    <p className="mt-6 text-sm text-muted-foreground">
                         Authorized distributors of world-class industrial tools and machinery with 21+ years of technical expertise
                     </p>
 
