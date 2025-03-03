@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { Suspense, useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { ContactForm } from "@/components/main/contact-form";
@@ -186,7 +186,7 @@ const ProductCard = ({ product }: { product: Product }) => (
     </motion.div>
 );
 
-const ProductsPage = () => {
+function ProductsPageContent() {
     const router = useRouter();
     const searchParams = useSearchParams();
 
@@ -232,7 +232,10 @@ const ProductsPage = () => {
     // Get unique brands
     const uniqueBrands = [
         ...new Set(
-            allProductGroups.map((group) => ({ brand: group.brand, image: group.logo }))
+            allProductGroups.map((group) => ({
+                brand: group.brand,
+                image: group.logo,
+            }))
         ),
     ];
     const selectedBrandGroup = allProductGroups.find(
@@ -242,7 +245,9 @@ const ProductsPage = () => {
     const breadcrumbItems = [
         { href: "/", title: "Home" },
         { href: "/products-we-deal", title: "Products" },
-        ...(selectedBrand ? [{ href: `/products-we-deal?brand=${selectedBrand}`, title: selectedBrand }] : []),
+        ...(selectedBrand
+            ? [{ href: `/products-we-deal?brand=${selectedBrand}`, title: selectedBrand }]
+            : []),
         ...(selectedCategory
             ? [
                 {
@@ -322,7 +327,9 @@ const ProductsPage = () => {
                                 key={index}
                                 brand={brand.brand}
                                 imageUrl={brand.image}
-                                onSelect={() => updateQuery({ brand: brand.brand, category: null, search: "" })}
+                                onSelect={() =>
+                                    updateQuery({ brand: brand.brand, category: null, search: "" })
+                                }
                             />
                         ))}
 
@@ -362,6 +369,14 @@ const ProductsPage = () => {
             </main>
         </div>
     );
-};
+}
 
-export default ProductsPage;
+// Wrap the ProductsPageContent component with Suspense to ensure that any usage
+// of useSearchParams() is properly handled without de-opt-ing to client-side rendering.
+export default function ProductsPage() {
+    return (
+        <Suspense fallback={<div>Loading products...</div>}>
+            <ProductsPageContent />
+        </Suspense>
+    );
+}
