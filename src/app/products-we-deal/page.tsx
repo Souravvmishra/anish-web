@@ -70,7 +70,7 @@ const BrandCard = ({
         className="w-full"
         onClick={onSelect}
     >
-        <Card className="relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10">
+        <Card className="relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10 h-full">
             <div className="relative h-48 overflow-hidden">
                 <img
                     src={imageUrl}
@@ -105,7 +105,7 @@ const CategoryCard = ({
         className="w-full"
         onClick={onSelect}
     >
-        <Card className="relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10">
+        <Card className="relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10 h-full">
             <div className="relative h-48 overflow-hidden">
                 <img
                     src={imageUrl}
@@ -133,7 +133,7 @@ const ProductCard = ({ product }: { product: Product }) => (
         whileTap="tap"
         className="w-full"
     >
-        <Card className="relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10">
+        <Card className="relative overflow-hidden group cursor-pointer bg-gradient-to-b from-background to-muted/10 h-full">
             <div className="relative h-40 sm:h-48 overflow-hidden">
                 <motion.div variants={imageVariants} className="absolute inset-0">
                     <img
@@ -169,18 +169,6 @@ const ProductCard = ({ product }: { product: Product }) => (
                         <span className="font-bold text-primary">{product.variants}+</span>
                     </div>
                 </div>
-                {/* <Button
-                    variant="outline"
-                    className="w-full bg-transparent hover:bg-primary/10 border-primary/20 hover:border-primary/30 font-semibold relative overflow-hidden text-sm sm:text-base"
-                >
-                    <span className="relative z-10">Explore Options</span>
-                    <motion.div
-                        className="absolute inset-0 bg-primary/10"
-                        initial={{ width: 0 }}
-                        whileHover={{ width: "100%" }}
-                        transition={{ duration: 0.3 }}
-                    />
-                </Button> */}
             </CardContent>
         </Card>
     </motion.div>
