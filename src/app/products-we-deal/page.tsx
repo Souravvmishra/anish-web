@@ -169,7 +169,7 @@ const ProductCard = ({ product }: { product: Product }) => (
                         <span className="font-bold text-primary">{product.variants}+</span>
                     </div>
                 </div>
-                <Button
+                {/* <Button
                     variant="outline"
                     className="w-full bg-transparent hover:bg-primary/10 border-primary/20 hover:border-primary/30 font-semibold relative overflow-hidden text-sm sm:text-base"
                 >
@@ -180,7 +180,7 @@ const ProductCard = ({ product }: { product: Product }) => (
                         whileHover={{ width: "100%" }}
                         transition={{ duration: 0.3 }}
                     />
-                </Button>
+                </Button> */}
             </CardContent>
         </Card>
     </motion.div>
