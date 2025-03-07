@@ -139,7 +139,7 @@ const ProductCard = ({ product }: { product: Product }) => (
                     <img
                         src={product.imageUrl}
                         alt={product.name}
-                        className="object-cover w-full h-full"
+                        className="object-contain w-full h-full"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
                 </motion.div>
